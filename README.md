@@ -107,9 +107,7 @@ Learn the JupyterLab interface here:
 Purpose: demonstrate a compact AmberTools workflow:
 
 1. Convert SMILES → 3D PDB (OpenBabel)
-
 2. Run antechamber to assign GAFF atom types & AM1-BCC charges
-
 3. Run parmchk2 to generate missing force-field terms (.frcmod)
 4. Use tleap to create prmtop and inpcrd files
 
