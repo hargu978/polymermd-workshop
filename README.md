@@ -25,7 +25,7 @@ This repository provides everything needed to run the hands-on **Polymer MD** wo
 ## Quick setup (one command)
 
 1. Install Miniconda / Anaconda (if not already installed):  
-   https://docs.conda.io/en/latest/miniconda.html
+   https://www.anaconda.com/docs/getting-started/miniconda/install
 
 2. From the repository root, create the environment and activate it:
 
@@ -36,3 +36,4 @@ conda env create -f environment.yml
 # activate
 conda activate polymer_md
 ```
+If you prefer manual installation, see the package list in the environment.yml section and install with conda install and pip per your OS.
