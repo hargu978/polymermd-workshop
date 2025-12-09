@@ -37,3 +37,28 @@ conda env create -f environment.yml
 conda activate polymer_md
 ```
 If you prefer manual installation, see the package list in the environment.yml section and install with conda install and pip per your OS.
+
+## environment.yml
+
+Save this as *environment.yml* in the repo root (or copy/paste into your terminal):
+```yaml
+name: polymer_md
+channels:
+  - conda-forge
+  - dacase
+dependencies:
+  - python=3.10
+  - amberclassic        # AmberClassic / AmberTools (Linux/macOS via dacase)
+  - gromacs             # GROMACS from conda-forge
+  - parmed              # topology conversion utilities
+  - openbabel           # SMILES <-> 3D formats
+  - rdkit               # optional: SMILES → 3D via RDKit (may be heavy on macOS/ARM)
+  - pip
+  - pip:
+      - packmol-memgen   # PACKMOL python wrapper
+      - jupyter
+```
+
+Notes:
+	•	amberclassic (dacase channel) currently supports linux-64 and osx-64. On Apple Silicon (M1/M2) you may need to use osx-64 emulation or run in x86_64 environment (or use Linux/WSL).
+	•	If rdkit causes issues on your platform, install only openbabel and use obabel for 3D conversion.
