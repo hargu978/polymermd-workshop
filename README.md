@@ -95,17 +95,23 @@ JupyterLab will print a URL similar to, this should open a new tab in the browse
 http://localhost:8888/lab?token=abc123...
 
 ```
-Learn the JupyterNotebook basics here: https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook%20Basics.html
-Learn the JupyterLab interface here: https://jupyterlab.readthedocs.io/en/4.4.x/user/interface.html
+Learn the JupyterNotebook basics here:
+- https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook%20Basics.html
+
+Learn the JupyterLab interface here: 
+- https://jupyterlab.readthedocs.io/en/4.4.x/user/interface.html
 
 
 ## Day 1: Notebook & example commands
 
 Purpose: demonstrate a compact AmberTools workflow:
-	1.	Convert SMILES → 3D PDB (OpenBabel)
-	2.	Run antechamber to assign GAFF atom types & AM1-BCC charges
-	3.	Run parmchk2 to generate missing force-field terms (.frcmod)
-	4.	Use tleap to create prmtop and inpcrd files
+
+1. Convert SMILES → 3D PDB (OpenBabel)
+
+2. Run antechamber to assign GAFF atom types & AM1-BCC charges
+
+3. Run parmchk2 to generate missing force-field terms (.frcmod)
+4. Use tleap to create prmtop and inpcrd files
 
 Example commands (from notebook)
 ```bash
