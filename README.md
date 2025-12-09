@@ -60,5 +60,5 @@ dependencies:
 ```
 
 Notes:
-	•	amberclassic (dacase channel) currently supports linux-64 and osx-64. On Apple Silicon (M1/M2) you may need to use osx-64 emulation or run in x86_64 environment (or use Linux/WSL).
-	•	If rdkit causes issues on your platform, install only openbabel and use obabel for 3D conversion.
+- amberclassic (dacase channel) currently supports linux-64 and osx-64. On Apple Silicon (M1/M2) you may need to use osx-64 emulation or run in x86_64 environment (or use Linux/WSL).
+- If rdkit causes issues on your platform, install only openbabel and use obabel for 3D conversion.
