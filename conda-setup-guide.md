@@ -21,12 +21,7 @@ To quickly set up the environment, use the provided `setup_conda_env.sh` script.
 ### Steps:
 1. Download the GitHub repository containing the workshop scripts:
    ```bash
-   # Using wget
-   wget https://github.com/hargu978/polymermd-workshop/archive/refs/heads/main.zip -O polymermd-workshop.zip
-   unzip polymermd-workshop.zip
-   cd polymermd-workshop-main
-
-   # OR using curl
+   # Using curl
    curl -L https://github.com/hargu978/polymermd-workshop/archive/refs/heads/main.zip -o polymermd-workshop.zip
    unzip polymermd-workshop.zip
    cd polymermd-workshop-main
