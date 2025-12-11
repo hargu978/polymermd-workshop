@@ -19,18 +19,31 @@ This guide provides step-by-step instructions to set up the environment for the 
 To quickly set up the environment, use the provided `setup_conda_env.sh` script.
 
 ### Steps:
-1. Ensure the script has execute permissions:
+1. Download the GitHub repository containing the workshop scripts:
+   ```bash
+   # Using wget
+   wget https://github.com/hargu978/polymermd-workshop/archive/refs/heads/main.zip -O polymermd-workshop.zip
+   unzip polymermd-workshop.zip
+   cd polymermd-workshop-main
+
+   # OR using curl
+   curl -L https://github.com/hargu978/polymermd-workshop/archive/refs/heads/main.zip -o polymermd-workshop.zip
+   unzip polymermd-workshop.zip
+   cd polymermd-workshop-main
+   ```
+
+2. Ensure the script has execute permissions:
    ```bash
    chmod +x setup_conda_env.sh
    ```
 
-2. If an old or incorrect environment with the name `polymer_md` exists, deactivate and delete it:
+3. If an old or incorrect environment with the name `polymer_md` exists, deactivate and delete it:
    ```bash
    conda deactivate  # Deactivate the current environment (if any)
    conda env remove -n polymer_md  # Delete the old environment
    ```
 
-3. Run the script:
+4. Run the script:
    ```bash
    ./setup_conda_env.sh
    ```
