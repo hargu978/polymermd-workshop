@@ -124,7 +124,7 @@ This script will:
 
 4. Source the AmberClassic environment:
    ```bash
-   source $CONDA_PREFIX/AmberClassic.sh
+   source $CONDA_PREFIX/amber.sh
    ```
    > **Estimated time:** ~1 second  
    > **Minimum disk space:** AmberClassic installation size (if not already installed)
