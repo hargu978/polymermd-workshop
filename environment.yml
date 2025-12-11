@@ -3,13 +3,17 @@ channels:
   - conda-forge
   - dacase
 dependencies:
-  - python=3.10
-  - amberclassic        # AmberClassic / AmberTools (Linux/macOS via dacase)
-  - gromacs             # GROMACS from conda-forge
-  - parmed              # topology conversion utilities
+  - python=3.12
+  - ambertools-dac=25     # AmberTools (Linux/macOS via dacase)
+  - gromacs             # GROMACS from conda-forge           
   - openbabel           # SMILES <-> 3D formats
-  - rdkit               # optional: SMILES → 3D via RDKit (may be heavy on macOS/ARM)
   - pip
   - pip:
-      - packmol-memgen   # PACKMOL python wrapper
+      - nglview   
+      - parmed          # topology conversion utilities
       - jupyter
+      - matplotlib      # plotting library
+      - scipy           # scientific computing
+      - pandas          # data analysis
+      - numpy           # numerical computations
+      - seaborn         # statistical data visualization

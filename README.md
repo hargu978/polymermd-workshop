@@ -1,126 +1,191 @@
-# Polymer MD Workshop — Environment & Quickstart
+# Polymer MD Workshop — Setup Guide
 
-This repository provides everything needed to run the hands-on **Polymer MD** workshop:
-- Conda-based environment (AmberClassic, GROMACS, ParmEd, OpenBabel/RDKit, PACKMOL, Jupyter)
-- `environment.yml` for one-command setup
-- Starter **Day 1** notebook: parameterize a small molecule with Antechamber
-- Recommended folder structure, example commands, and troubleshooting tips
-
-> **Goal:** enable participants to build polymer systems from SMILES, parameterize monomers, convert topologies, run GROMACS workflows, and analyze polymer properties.
+This guide provides step-by-step instructions to set up the environment for the **Polymer MD Workshop**.
 
 ---
 
-## Table of contents
-1. [Quick setup (one command)](#quick-setup-one-command)  
-2. [environment.yml (copy/paste)](#environmentyml)  
-3. [Activate environment & start Jupyter](#activate-environment-jupyter)  
-4. [Day 1: Notebook & example commands](#day-1-notebook--example-commands)  
-5. [Recommended folder structure](#recommended-folder-structure)  
-6. [Further resources & contact](#further-resources--contact)
+## Table of Contents
+1. [Quick Install](#quick-install)
+2. [Step 1: Install Conda](#step-1-install-conda)
+3. [Step 2: Create the Conda Environment](#step-2-create-the-conda-environment)
+4. [Step 3: Start Jupyter Lab](#step-3-start-jupyter-lab)
+5. [Notes](#notes)
+6. [Day 1: Notebook & Example Commands](#day-1-notebook--example-commands)
 
 ---
 
-## Quick setup (one command)
+## Quick Install
 
-1. Install Miniconda / Anaconda (if not already installed):  
-   https://www.anaconda.com/docs/getting-started/miniconda/install
+To quickly set up the environment, use the provided `setup_conda_env.sh` script.
 
-2. From the repository root, create the environment and activate it:
+### Steps:
+1. Ensure the script has execute permissions:
+   ```bash
+   chmod +x setup_conda_env.sh
+   ```
 
-```bash
-# create environment from environment.yml (provided below)
-conda env create -f environment.yml
+2. If an old or incorrect environment with the name `polymer_md` exists, deactivate and delete it:
+   ```bash
+   conda deactivate  # Deactivate the current environment (if any)
+   conda env remove -n polymer_md  # Delete the old environment
+   ```
 
-# activate
-conda activate polymer_md
-```
-If you prefer manual installation, see the package list in the environment.yml section and install with conda install and pip per your OS.
+3. Run the script:
+   ```bash
+   ./setup_conda_env.sh
+   ```
 
-## environment.yml
+This script will:
+- Check if Conda is installed, and install Miniconda if necessary.
+- Create the Conda environment using the `environment.yml` file.
+- Activate the environment and source AmberTools.
 
-Save this as *environment.yml* in the repo root (or copy/paste into your terminal):
-```yaml
-name: polymer_md
-channels:
-  - conda-forge
-  - dacase
-dependencies:
-  - python=3.10
-  - amberclassic        # AmberClassic / AmberTools (Linux/macOS via dacase)
-  - gromacs             # GROMACS from conda-forge
-  - parmed              # topology conversion utilities
-  - openbabel           # SMILES <-> 3D formats
-  - rdkit               # optional: SMILES → 3D via RDKit (may be heavy on macOS/ARM)
-  - pip
-  - pip:
-      - packmol-memgen   # PACKMOL python wrapper
-      - jupyter
-```
+> **Note:** Ensure the `setup_conda_env.sh` script and `environment.yml` file are in the same directory.
 
-Notes:
-- amberclassic (dacase channel) currently supports linux-64 and osx-64. On Apple Silicon (M1/M2) you may need to use osx-64 emulation or run in x86_64 environment (or use Linux/WSL).
-- If rdkit causes issues on your platform, install only openbabel and use obabel for 3D conversion.
+---
 
-## Activate environment & start jupyter lab
-```bash
-conda activate polymer_md
+## Step 1: Install Conda
 
-# Verify core tools
-gmx --version           # GROMACS
-antechamber -h          # AmberClassic / Antechamber
-parmchk2 -h             # Parmchk2
-tleap -h                # tleap (Amber)
-obabel -V               # Open Babel
-python -c "import packmol_memgen; print('packmol OK')"
-jupyter --version
-```
-If any command is missing, re-check the environment creation step or install individually:
-```bash
-conda install -c conda-forge gromacs parmed openbabel
-conda install -c dacase amberclassic
-pip install packmol-memgen jupyter
-```
-If antechamber / tleap not found
-- Ensure you sourced Amber environment (the Conda package should place executables on PATH). If needed:
-```bash
-source $CONDA_PREFIX/AmberClassic.sh
-```
+### For Linux or macOS:
+1. Download the Miniconda installer:
+   ```bash
+   # For Linux
+   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
-To start the remote JuoyterLab without SSH tunneling, run this in the project directory:
-```bash
-jupyter lab --ip 0.0.0.0 --no-browser
-```
-JupyterLab will print a URL similar to, this should open a new tab in the browser:
-```text
-http://localhost:8888/lab?token=abc123...
+   # For macOS
+   curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+   ```
+   > **Estimated time:** ~1-3 minutes (depending on network speed)  
+   > **Minimum disk space:** ~100 MB for the installer
 
-```
-Learn the JupyterNotebook basics here:
-- https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook%20Basics.html
+2. Run the installer:
+   ```bash
+   bash Miniconda3-latest-<OS>-x86_64.sh  # Replace <OS> with Linux or MacOSX
+   ```
+   > **Estimated time:** ~2-5 minutes  
+   > **Minimum disk space:** ~400 MB for installation
 
-Learn the JupyterLab interface here: 
-- https://jupyterlab.readthedocs.io/en/4.4.x/user/interface.html
+3. Follow the prompts to complete the installation.
 
+4. Delete the installer file:
+   ```bash
+   rm Miniconda3-latest-<OS>-x86_64.sh
+   ```
+   > **Estimated time:** ~1 second
 
-## Day 1: Notebook & example commands
+5. Activate Conda:
+   ```bash
+   source ~/.bashrc
+   ```
+   > **Estimated time:** ~1 second
 
-Purpose: demonstrate a compact AmberTools workflow:
+---
+
+## Step 2: Create the Conda Environment
+
+1. Ensure the `environment.yml` file is in the project root directory:
+   ```yaml
+   name: polymer_md
+   channels:
+     - conda-forge
+     - dacase
+   dependencies:
+     - python=3.12
+     - ambertools-dac=25     # AmberTools (Linux/macOS via dacase)
+     - gromacs
+     - parmed
+     - openbabel
+     - pip
+     - pip:
+         - nglview
+         - jupyter
+   ```
+
+2. Create the environment:
+   ```bash
+   conda env create -f environment.yml
+   ```
+   > **Estimated time:** ~2-10 minutes (depending on the environment complexity)  
+   > **Minimum disk space:** ~1 GB (depending on the packages in `environment.yml`)
+
+3. Activate the environment:
+   ```bash
+   conda activate polymer_md
+   ```
+   > **Estimated time:** ~1 second
+
+4. Source the AmberClassic environment:
+   ```bash
+   source $CONDA_PREFIX/AmberClassic.sh
+   ```
+   > **Estimated time:** ~1 second  
+   > **Minimum disk space:** AmberClassic installation size (if not already installed)
+
+---
+
+## Step 3: Start Jupyter Lab
+
+1. Verify the installation of core tools:
+   ```bash
+   gmx --version           # GROMACS
+   antechamber -h          # AmberClassic / Antechamber
+   parmchk2 -h             # Parmchk2
+   tleap -h                # tleap (Amber)
+   obabel -V               # Open Babel
+   jupyter --version       # Jupyter
+   ```
+   > **Estimated time:** ~1-2 minutes (to verify all tools)
+
+2. Start Jupyter Lab:
+   ```bash
+   jupyter lab --ip 0.0.0.0 --no-browser
+   ```
+   > **Estimated time:** ~5-10 seconds
+
+3. Open the URL printed in the terminal to access Jupyter Lab.
+
+---
+
+## Notes
+
+- If any tool is missing, install it manually:
+  ```bash
+  conda install -c conda-forge gromacs parmed openbabel
+  conda install dacase::ambertools-dac=25
+  pip install nglview jupyter matplotlib
+  ```
+  > **Estimated time:** ~2-5 minutes (depending on the missing tools)  
+  > **Minimum disk space:** ~500 MB - 1 GB (depending on the tools)
+
+- Refer to the following for more information:
+  - [Jupyter Notebook Basics](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook%20Basics.html)
+  - [Jupyter Lab Interface](https://jupyterlab.readthedocs.io/en/stable/user/interface.html)
+
+---
+
+## Day 1: Notebook & Example Commands
+
+### Purpose
+Demonstrate a compact AmberTools workflow:
 
 1. Convert SMILES → 3D PDB (OpenBabel)
 2. Run antechamber to assign GAFF atom types & AM1-BCC charges
 3. Run parmchk2 to generate missing force-field terms (.frcmod)
 4. Use tleap to create prmtop and inpcrd files
 
-Example commands (from notebook)
+### Example Commands
 ```bash
 # 1. SMILES -> 3D PDB (OpenBabel)
 obabel -:"CCO" -O ethanol.pdb --gen3d
+# Estimated time: ~5 seconds
 
 # 2. Antechamber: generate mol2 and AM1-BCC charges
 antechamber -i ethanol.pdb -fi pdb -o ethanol.mol2 -fo mol2 -c bcc -s 2
+# Estimated time: ~10-30 seconds
 
 # 3. Parmchk2: create frcmod
 parmchk2 -i ethanol.mol2 -f mol2 -o ethanol.frcmod
+# Estimated time: ~5 seconds
 
 # 4. tleap: build prmtop/inpcrd
 cat > tleap_ethanol.in << 'EOF'
@@ -132,5 +197,7 @@ quit
 EOF
 
 tleap -f tleap_ethanol.in
+# Estimated time: ~5-10 seconds
 ```
+
 The Day-1 notebook contains these steps with explanatory text and cells you can run interactively.
