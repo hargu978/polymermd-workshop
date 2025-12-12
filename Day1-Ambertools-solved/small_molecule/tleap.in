@@ -1,0 +1,13 @@
+
+source leaprc.gaff2
+source leaprc.water.tip3p
+
+# Load molecule (from antechamber-generated files)
+ETH = loadmol2 propanol_gaff.mol2
+loadamberparams propanol.frcmod
+
+# Build topology and coordinate files
+saveamberparm ETH propanol.prmtop propanol.inpcrd
+
+# Optional: PDB for visualization
+savepdb ETH propanol.pdb
