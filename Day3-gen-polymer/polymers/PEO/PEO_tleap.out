@@ -1,0 +1,37 @@
+-I: Adding /Users/harish/miniconda3/envs/polymer_md/dat/leap/prep to search path.
+-I: Adding /Users/harish/miniconda3/envs/polymer_md/dat/leap/lib to search path.
+-I: Adding /Users/harish/miniconda3/envs/polymer_md/dat/leap/parm to search path.
+-I: Adding /Users/harish/miniconda3/envs/polymer_md/dat/leap/cmd to search path.
+-s: Ignoring all leaprc startup files.
+-f: Source /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer/polymers/PEO/PEO_tleap.in.
+
+Welcome to LEaP!
+Sourcing: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer/polymers/PEO/PEO_tleap.in
+----- Source: /Users/harish/miniconda3/envs/polymer_md/dat/leap/cmd/leaprc.gaff2
+----- Source of /Users/harish/miniconda3/envs/polymer_md/dat/leap/cmd/leaprc.gaff2 done
+Log file: ./leap.log
+Loading parameters: /Users/harish/miniconda3/envs/polymer_md/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.2.20, March 2021)
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer/monomers/PEO/PEO.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer/monomers/PEO/HPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer/monomers/PEO/TPT.prepi
+Writing pdb file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer/polymers/PEO/PEO_25mer.pdb
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+old PREP-specified impropers:
+ total 0 improper torsions applied
+ 0 improper torsions in old prep form
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+ (no restraints)
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 0; Notes = 0.
