@@ -1,0 +1,11 @@
+
+source leaprc.gaff2
+loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/HPT.prepi
+loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+
+mol = sequence {PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET}
+
+savepdb mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PET25_homo/polymer_25mer.pdb
+saveamberparm mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PET25_homo/polymer_25mer.prmtop                  /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PET25_homo/polymer_25mer.inpcrd
+quit
