@@ -2,7 +2,7 @@
 ;   File topol.top  was generated
 ;   By user: harish (501)
 ;   On host:Mac 
-;   At date:Fri. December  5 10:08:17 2025 
+;   At date:Fri. December  5 12:51:22 2025 
 ;
 ;   This is a standalone topology file
 ;
@@ -11,7 +11,7 @@
 ;   Executable:   ipykernel_launcher.py
 ;   Library dir:  /Users/harish/miniconda3/envs/polymer_md/share/gromacs/top
 ;   Command line:
-;     /Users/harish/miniconda3/envs/polymer_md/lib/python3.12/site-packages/ipykernel_launcher.py --f=/Users/harish/Library/Jupyter/runtime/kernel-v31208e13e2a0106b587080adc94592cecf44b2679.json
+;     /Users/harish/miniconda3/envs/polymer_md/lib/python3.12/site-packages/ipykernel_launcher.py -f /Users/harish/Library/Jupyter/runtime/kernel-fd8dc5c0-e3cb-470c-afe1-af7a2c3233c2.json
 ;
 
 [ defaults ]
