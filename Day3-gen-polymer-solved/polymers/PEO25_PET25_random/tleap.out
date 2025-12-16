@@ -34,14 +34,6 @@ old PREP-specified impropers:
  <PET 1>:  C3   C1   C2   H1  
  <PET 1>:  C7   C6   C1   C2  
  <PET 1>:  C1   O3   C7   O4  
- <PET 2>:  C4   O1   C8   O2  
- <PET 2>:  C8   C5   C4   C3  
- <PET 2>:  C6   C4   C5   H3  
- <PET 2>:  C5   C1   C6   H4  
- <PET 2>:  C2   C4   C3   H2  
- <PET 2>:  C3   C1   C2   H1  
- <PET 2>:  C7   C6   C1   C2  
- <PET 2>:  C1   O3   C7   O4  
  <PET 3>:  C4   O1   C8   O2  
  <PET 3>:  C8   C5   C4   C3  
  <PET 3>:  C6   C4   C5   H3  
@@ -66,14 +58,14 @@ old PREP-specified impropers:
  <PET 5>:  C3   C1   C2   H1  
  <PET 5>:  C7   C6   C1   C2  
  <PET 5>:  C1   O3   C7   O4  
- <PET 6>:  C4   O1   C8   O2  
- <PET 6>:  C8   C5   C4   C3  
- <PET 6>:  C6   C4   C5   H3  
- <PET 6>:  C5   C1   C6   H4  
- <PET 6>:  C2   C4   C3   H2  
- <PET 6>:  C3   C1   C2   H1  
- <PET 6>:  C7   C6   C1   C2  
- <PET 6>:  C1   O3   C7   O4  
+ <PET 7>:  C4   O1   C8   O2  
+ <PET 7>:  C8   C5   C4   C3  
+ <PET 7>:  C6   C4   C5   H3  
+ <PET 7>:  C5   C1   C6   H4  
+ <PET 7>:  C2   C4   C3   H2  
+ <PET 7>:  C3   C1   C2   H1  
+ <PET 7>:  C7   C6   C1   C2  
+ <PET 7>:  C1   O3   C7   O4  
  <PET 8>:  C4   O1   C8   O2  
  <PET 8>:  C8   C5   C4   C3  
  <PET 8>:  C6   C4   C5   H3  
@@ -146,6 +138,14 @@ old PREP-specified impropers:
  <PET 16>:  C3   C1   C2   H1  
  <PET 16>:  C7   C6   C1   C2  
  <PET 16>:  C1   O3   C7   O4  
+ <PET 17>:  C4   O1   C8   O2  
+ <PET 17>:  C8   C5   C4   C3  
+ <PET 17>:  C6   C4   C5   H3  
+ <PET 17>:  C5   C1   C6   H4  
+ <PET 17>:  C2   C4   C3   H2  
+ <PET 17>:  C3   C1   C2   H1  
+ <PET 17>:  C7   C6   C1   C2  
+ <PET 17>:  C1   O3   C7   O4  
  <PET 18>:  C4   O1   C8   O2  
  <PET 18>:  C8   C5   C4   C3  
  <PET 18>:  C6   C4   C5   H3  
@@ -186,6 +186,14 @@ old PREP-specified impropers:
  <PET 22>:  C3   C1   C2   H1  
  <PET 22>:  C7   C6   C1   C2  
  <PET 22>:  C1   O3   C7   O4  
+ <PET 23>:  C4   O1   C8   O2  
+ <PET 23>:  C8   C5   C4   C3  
+ <PET 23>:  C6   C4   C5   H3  
+ <PET 23>:  C5   C1   C6   H4  
+ <PET 23>:  C2   C4   C3   H2  
+ <PET 23>:  C3   C1   C2   H1  
+ <PET 23>:  C7   C6   C1   C2  
+ <PET 23>:  C1   O3   C7   O4  
  <PET 24>:  C4   O1   C8   O2  
  <PET 24>:  C8   C5   C4   C3  
  <PET 24>:  C6   C4   C5   H3  
@@ -194,14 +202,6 @@ old PREP-specified impropers:
  <PET 24>:  C3   C1   C2   H1  
  <PET 24>:  C7   C6   C1   C2  
  <PET 24>:  C1   O3   C7   O4  
- <PET 25>:  C4   O1   C8   O2  
- <PET 25>:  C8   C5   C4   C3  
- <PET 25>:  C6   C4   C5   H3  
- <PET 25>:  C5   C1   C6   H4  
- <PET 25>:  C2   C4   C3   H2  
- <PET 25>:  C3   C1   C2   H1  
- <PET 25>:  C7   C6   C1   C2  
- <PET 25>:  C1   O3   C7   O4  
  <PET 26>:  C4   O1   C8   O2  
  <PET 26>:  C8   C5   C4   C3  
  <PET 26>:  C6   C4   C5   H3  
