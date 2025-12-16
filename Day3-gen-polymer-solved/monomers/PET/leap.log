@@ -2893,3 +2893,4362 @@ Marking per-residue atom chain types.
 	Quit
 
 Exiting LEaP: Errors = 0; Warnings = 0; Notes = 0.
+log started: Mon Dec 15 09:51:04 2025
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "op"  "O" "sp3" }
+>> 	{ "oq"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "c5"  "C" "sp3" }
+>> 	{ "c6"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cs"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "cz"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "n5"  "N" "sp3" }
+>> 	{ "n6"  "N" "sp3" }
+>> 	{ "n7"  "N" "sp3" }
+>> 	{ "n8"  "N" "sp3" }
+>> 	{ "n9"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "ni"  "N" "sp2" }
+>> 	{ "nj"  "N" "sp2" }
+>> 	{ "nk"  "N" "sp3" }
+>> 	{ "nl"  "N" "sp3" }
+>> 	{ "nm"  "N" "sp2" }
+>> 	{ "nn"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "np"  "N" "sp3" }
+>> 	{ "nq"  "N" "sp3" }
+>> 	{ "ns"  "N" "sp2" }
+>> 	{ "nt"  "N" "sp2" }
+>> 	{ "nu"  "N" "sp2" }
+>> 	{ "nv"  "N" "sp2" }
+>> 	{ "nx"  "N" "sp3" }
+>> 	{ "ny"  "N" "sp3" }
+>> 	{ "nz"  "N" "sp3" }
+>> 	{ "n+"  "N" "sp3" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "sp"   "S" "sp3" }
+>> 	{ "sq"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pc"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "pe"   "P" "sp3" }
+>> 	{ "pf"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff2.dat
+Loading parameters: /Users/harish/miniconda3/envs/polymer_md/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.2.20, March 2021)
+> 
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/HPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/HPT.prepi
+Loaded UNIT: HPT
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+Loaded UNIT: PET
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+Loaded UNIT: TPT
+> 
+> mol = sequence {PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET}
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+> 
+> savepdb mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PET25_homo/polymer_25mer.pdb
+Writing pdb file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PET25_homo/polymer_25mer.pdb
+> saveamberparm mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PET25_homo/polymer_25mer.prmtop                  /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PET25_homo/polymer_25mer.inpcrd
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+old PREP-specified impropers:
+ <PET 1>:  C4   O1   C8   O2  
+ <PET 1>:  C8   C5   C4   C3  
+ <PET 1>:  C6   C4   C5   H3  
+ <PET 1>:  C5   C1   C6   H4  
+ <PET 1>:  C2   C4   C3   H2  
+ <PET 1>:  C3   C1   C2   H1  
+ <PET 1>:  C7   C6   C1   C2  
+ <PET 1>:  C1   O3   C7   O4  
+ <PET 2>:  C4   O1   C8   O2  
+ <PET 2>:  C8   C5   C4   C3  
+ <PET 2>:  C6   C4   C5   H3  
+ <PET 2>:  C5   C1   C6   H4  
+ <PET 2>:  C2   C4   C3   H2  
+ <PET 2>:  C3   C1   C2   H1  
+ <PET 2>:  C7   C6   C1   C2  
+ <PET 2>:  C1   O3   C7   O4  
+ <PET 3>:  C4   O1   C8   O2  
+ <PET 3>:  C8   C5   C4   C3  
+ <PET 3>:  C6   C4   C5   H3  
+ <PET 3>:  C5   C1   C6   H4  
+ <PET 3>:  C2   C4   C3   H2  
+ <PET 3>:  C3   C1   C2   H1  
+ <PET 3>:  C7   C6   C1   C2  
+ <PET 3>:  C1   O3   C7   O4  
+ <PET 4>:  C4   O1   C8   O2  
+ <PET 4>:  C8   C5   C4   C3  
+ <PET 4>:  C6   C4   C5   H3  
+ <PET 4>:  C5   C1   C6   H4  
+ <PET 4>:  C2   C4   C3   H2  
+ <PET 4>:  C3   C1   C2   H1  
+ <PET 4>:  C7   C6   C1   C2  
+ <PET 4>:  C1   O3   C7   O4  
+ <PET 5>:  C4   O1   C8   O2  
+ <PET 5>:  C8   C5   C4   C3  
+ <PET 5>:  C6   C4   C5   H3  
+ <PET 5>:  C5   C1   C6   H4  
+ <PET 5>:  C2   C4   C3   H2  
+ <PET 5>:  C3   C1   C2   H1  
+ <PET 5>:  C7   C6   C1   C2  
+ <PET 5>:  C1   O3   C7   O4  
+ <PET 6>:  C4   O1   C8   O2  
+ <PET 6>:  C8   C5   C4   C3  
+ <PET 6>:  C6   C4   C5   H3  
+ <PET 6>:  C5   C1   C6   H4  
+ <PET 6>:  C2   C4   C3   H2  
+ <PET 6>:  C3   C1   C2   H1  
+ <PET 6>:  C7   C6   C1   C2  
+ <PET 6>:  C1   O3   C7   O4  
+ <PET 7>:  C4   O1   C8   O2  
+ <PET 7>:  C8   C5   C4   C3  
+ <PET 7>:  C6   C4   C5   H3  
+ <PET 7>:  C5   C1   C6   H4  
+ <PET 7>:  C2   C4   C3   H2  
+ <PET 7>:  C3   C1   C2   H1  
+ <PET 7>:  C7   C6   C1   C2  
+ <PET 7>:  C1   O3   C7   O4  
+ <PET 8>:  C4   O1   C8   O2  
+ <PET 8>:  C8   C5   C4   C3  
+ <PET 8>:  C6   C4   C5   H3  
+ <PET 8>:  C5   C1   C6   H4  
+ <PET 8>:  C2   C4   C3   H2  
+ <PET 8>:  C3   C1   C2   H1  
+ <PET 8>:  C7   C6   C1   C2  
+ <PET 8>:  C1   O3   C7   O4  
+ <PET 9>:  C4   O1   C8   O2  
+ <PET 9>:  C8   C5   C4   C3  
+ <PET 9>:  C6   C4   C5   H3  
+ <PET 9>:  C5   C1   C6   H4  
+ <PET 9>:  C2   C4   C3   H2  
+ <PET 9>:  C3   C1   C2   H1  
+ <PET 9>:  C7   C6   C1   C2  
+ <PET 9>:  C1   O3   C7   O4  
+ <PET 10>:  C4   O1   C8   O2  
+ <PET 10>:  C8   C5   C4   C3  
+ <PET 10>:  C6   C4   C5   H3  
+ <PET 10>:  C5   C1   C6   H4  
+ <PET 10>:  C2   C4   C3   H2  
+ <PET 10>:  C3   C1   C2   H1  
+ <PET 10>:  C7   C6   C1   C2  
+ <PET 10>:  C1   O3   C7   O4  
+ <PET 11>:  C4   O1   C8   O2  
+ <PET 11>:  C8   C5   C4   C3  
+ <PET 11>:  C6   C4   C5   H3  
+ <PET 11>:  C5   C1   C6   H4  
+ <PET 11>:  C2   C4   C3   H2  
+ <PET 11>:  C3   C1   C2   H1  
+ <PET 11>:  C7   C6   C1   C2  
+ <PET 11>:  C1   O3   C7   O4  
+ <PET 12>:  C4   O1   C8   O2  
+ <PET 12>:  C8   C5   C4   C3  
+ <PET 12>:  C6   C4   C5   H3  
+ <PET 12>:  C5   C1   C6   H4  
+ <PET 12>:  C2   C4   C3   H2  
+ <PET 12>:  C3   C1   C2   H1  
+ <PET 12>:  C7   C6   C1   C2  
+ <PET 12>:  C1   O3   C7   O4  
+ <PET 13>:  C4   O1   C8   O2  
+ <PET 13>:  C8   C5   C4   C3  
+ <PET 13>:  C6   C4   C5   H3  
+ <PET 13>:  C5   C1   C6   H4  
+ <PET 13>:  C2   C4   C3   H2  
+ <PET 13>:  C3   C1   C2   H1  
+ <PET 13>:  C7   C6   C1   C2  
+ <PET 13>:  C1   O3   C7   O4  
+ <PET 14>:  C4   O1   C8   O2  
+ <PET 14>:  C8   C5   C4   C3  
+ <PET 14>:  C6   C4   C5   H3  
+ <PET 14>:  C5   C1   C6   H4  
+ <PET 14>:  C2   C4   C3   H2  
+ <PET 14>:  C3   C1   C2   H1  
+ <PET 14>:  C7   C6   C1   C2  
+ <PET 14>:  C1   O3   C7   O4  
+ <PET 15>:  C4   O1   C8   O2  
+ <PET 15>:  C8   C5   C4   C3  
+ <PET 15>:  C6   C4   C5   H3  
+ <PET 15>:  C5   C1   C6   H4  
+ <PET 15>:  C2   C4   C3   H2  
+ <PET 15>:  C3   C1   C2   H1  
+ <PET 15>:  C7   C6   C1   C2  
+ <PET 15>:  C1   O3   C7   O4  
+ <PET 16>:  C4   O1   C8   O2  
+ <PET 16>:  C8   C5   C4   C3  
+ <PET 16>:  C6   C4   C5   H3  
+ <PET 16>:  C5   C1   C6   H4  
+ <PET 16>:  C2   C4   C3   H2  
+ <PET 16>:  C3   C1   C2   H1  
+ <PET 16>:  C7   C6   C1   C2  
+ <PET 16>:  C1   O3   C7   O4  
+ <PET 17>:  C4   O1   C8   O2  
+ <PET 17>:  C8   C5   C4   C3  
+ <PET 17>:  C6   C4   C5   H3  
+ <PET 17>:  C5   C1   C6   H4  
+ <PET 17>:  C2   C4   C3   H2  
+ <PET 17>:  C3   C1   C2   H1  
+ <PET 17>:  C7   C6   C1   C2  
+ <PET 17>:  C1   O3   C7   O4  
+ <PET 18>:  C4   O1   C8   O2  
+ <PET 18>:  C8   C5   C4   C3  
+ <PET 18>:  C6   C4   C5   H3  
+ <PET 18>:  C5   C1   C6   H4  
+ <PET 18>:  C2   C4   C3   H2  
+ <PET 18>:  C3   C1   C2   H1  
+ <PET 18>:  C7   C6   C1   C2  
+ <PET 18>:  C1   O3   C7   O4  
+ <PET 19>:  C4   O1   C8   O2  
+ <PET 19>:  C8   C5   C4   C3  
+ <PET 19>:  C6   C4   C5   H3  
+ <PET 19>:  C5   C1   C6   H4  
+ <PET 19>:  C2   C4   C3   H2  
+ <PET 19>:  C3   C1   C2   H1  
+ <PET 19>:  C7   C6   C1   C2  
+ <PET 19>:  C1   O3   C7   O4  
+ <PET 20>:  C4   O1   C8   O2  
+ <PET 20>:  C8   C5   C4   C3  
+ <PET 20>:  C6   C4   C5   H3  
+ <PET 20>:  C5   C1   C6   H4  
+ <PET 20>:  C2   C4   C3   H2  
+ <PET 20>:  C3   C1   C2   H1  
+ <PET 20>:  C7   C6   C1   C2  
+ <PET 20>:  C1   O3   C7   O4  
+ <PET 21>:  C4   O1   C8   O2  
+ <PET 21>:  C8   C5   C4   C3  
+ <PET 21>:  C6   C4   C5   H3  
+ <PET 21>:  C5   C1   C6   H4  
+ <PET 21>:  C2   C4   C3   H2  
+ <PET 21>:  C3   C1   C2   H1  
+ <PET 21>:  C7   C6   C1   C2  
+ <PET 21>:  C1   O3   C7   O4  
+ <PET 22>:  C4   O1   C8   O2  
+ <PET 22>:  C8   C5   C4   C3  
+ <PET 22>:  C6   C4   C5   H3  
+ <PET 22>:  C5   C1   C6   H4  
+ <PET 22>:  C2   C4   C3   H2  
+ <PET 22>:  C3   C1   C2   H1  
+ <PET 22>:  C7   C6   C1   C2  
+ <PET 22>:  C1   O3   C7   O4  
+ <PET 23>:  C4   O1   C8   O2  
+ <PET 23>:  C8   C5   C4   C3  
+ <PET 23>:  C6   C4   C5   H3  
+ <PET 23>:  C5   C1   C6   H4  
+ <PET 23>:  C2   C4   C3   H2  
+ <PET 23>:  C3   C1   C2   H1  
+ <PET 23>:  C7   C6   C1   C2  
+ <PET 23>:  C1   O3   C7   O4  
+ <PET 24>:  C4   O1   C8   O2  
+ <PET 24>:  C8   C5   C4   C3  
+ <PET 24>:  C6   C4   C5   H3  
+ <PET 24>:  C5   C1   C6   H4  
+ <PET 24>:  C2   C4   C3   H2  
+ <PET 24>:  C3   C1   C2   H1  
+ <PET 24>:  C7   C6   C1   C2  
+ <PET 24>:  C1   O3   C7   O4  
+ <PET 25>:  C4   O1   C8   O2  
+ <PET 25>:  C8   C5   C4   C3  
+ <PET 25>:  C6   C4   C5   H3  
+ <PET 25>:  C5   C1   C6   H4  
+ <PET 25>:  C2   C4   C3   H2  
+ <PET 25>:  C3   C1   C2   H1  
+ <PET 25>:  C7   C6   C1   C2  
+ <PET 25>:  C1   O3   C7   O4  
+ total 150 improper torsions applied
+ 200 improper torsions in old prep form
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+ (no restraints)
+> quit
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 0; Notes = 0.
+log started: Mon Dec 15 09:51:04 2025
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "op"  "O" "sp3" }
+>> 	{ "oq"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "c5"  "C" "sp3" }
+>> 	{ "c6"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cs"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "cz"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "n5"  "N" "sp3" }
+>> 	{ "n6"  "N" "sp3" }
+>> 	{ "n7"  "N" "sp3" }
+>> 	{ "n8"  "N" "sp3" }
+>> 	{ "n9"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "ni"  "N" "sp2" }
+>> 	{ "nj"  "N" "sp2" }
+>> 	{ "nk"  "N" "sp3" }
+>> 	{ "nl"  "N" "sp3" }
+>> 	{ "nm"  "N" "sp2" }
+>> 	{ "nn"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "np"  "N" "sp3" }
+>> 	{ "nq"  "N" "sp3" }
+>> 	{ "ns"  "N" "sp2" }
+>> 	{ "nt"  "N" "sp2" }
+>> 	{ "nu"  "N" "sp2" }
+>> 	{ "nv"  "N" "sp2" }
+>> 	{ "nx"  "N" "sp3" }
+>> 	{ "ny"  "N" "sp3" }
+>> 	{ "nz"  "N" "sp3" }
+>> 	{ "n+"  "N" "sp3" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "sp"   "S" "sp3" }
+>> 	{ "sq"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pc"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "pe"   "P" "sp3" }
+>> 	{ "pf"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff2.dat
+Loading parameters: /Users/harish/miniconda3/envs/polymer_md/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.2.20, March 2021)
+> 
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/HPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/HPT.prepi
+Loaded UNIT: HPT
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/PEO.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/PEO.prepi
+Loaded UNIT: PEO
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+Loaded UNIT: PET
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+Loaded UNIT: TPT
+> 
+> mol = sequence {PEO PEO PEO PEO PEO PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET}
+Sequence: PEO
+Sequence: PEO
+Sequence: PEO
+Sequence: PEO
+Sequence: PEO
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+> 
+> savepdb mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_block/polymer_50mer.pdb
+Writing pdb file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_block/polymer_50mer.pdb
+> saveamberparm mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_block/polymer_50mer.prmtop                  /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_block/polymer_50mer.inpcrd
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+old PREP-specified impropers:
+ <PET 6>:  C4   O1   C8   O2  
+ <PET 6>:  C8   C5   C4   C3  
+ <PET 6>:  C6   C4   C5   H3  
+ <PET 6>:  C5   C1   C6   H4  
+ <PET 6>:  C2   C4   C3   H2  
+ <PET 6>:  C3   C1   C2   H1  
+ <PET 6>:  C7   C6   C1   C2  
+ <PET 6>:  C1   O3   C7   O4  
+ <PET 7>:  C4   O1   C8   O2  
+ <PET 7>:  C8   C5   C4   C3  
+ <PET 7>:  C6   C4   C5   H3  
+ <PET 7>:  C5   C1   C6   H4  
+ <PET 7>:  C2   C4   C3   H2  
+ <PET 7>:  C3   C1   C2   H1  
+ <PET 7>:  C7   C6   C1   C2  
+ <PET 7>:  C1   O3   C7   O4  
+ <PET 8>:  C4   O1   C8   O2  
+ <PET 8>:  C8   C5   C4   C3  
+ <PET 8>:  C6   C4   C5   H3  
+ <PET 8>:  C5   C1   C6   H4  
+ <PET 8>:  C2   C4   C3   H2  
+ <PET 8>:  C3   C1   C2   H1  
+ <PET 8>:  C7   C6   C1   C2  
+ <PET 8>:  C1   O3   C7   O4  
+ <PET 9>:  C4   O1   C8   O2  
+ <PET 9>:  C8   C5   C4   C3  
+ <PET 9>:  C6   C4   C5   H3  
+ <PET 9>:  C5   C1   C6   H4  
+ <PET 9>:  C2   C4   C3   H2  
+ <PET 9>:  C3   C1   C2   H1  
+ <PET 9>:  C7   C6   C1   C2  
+ <PET 9>:  C1   O3   C7   O4  
+ <PET 10>:  C4   O1   C8   O2  
+ <PET 10>:  C8   C5   C4   C3  
+ <PET 10>:  C6   C4   C5   H3  
+ <PET 10>:  C5   C1   C6   H4  
+ <PET 10>:  C2   C4   C3   H2  
+ <PET 10>:  C3   C1   C2   H1  
+ <PET 10>:  C7   C6   C1   C2  
+ <PET 10>:  C1   O3   C7   O4  
+ <PET 11>:  C4   O1   C8   O2  
+ <PET 11>:  C8   C5   C4   C3  
+ <PET 11>:  C6   C4   C5   H3  
+ <PET 11>:  C5   C1   C6   H4  
+ <PET 11>:  C2   C4   C3   H2  
+ <PET 11>:  C3   C1   C2   H1  
+ <PET 11>:  C7   C6   C1   C2  
+ <PET 11>:  C1   O3   C7   O4  
+ <PET 12>:  C4   O1   C8   O2  
+ <PET 12>:  C8   C5   C4   C3  
+ <PET 12>:  C6   C4   C5   H3  
+ <PET 12>:  C5   C1   C6   H4  
+ <PET 12>:  C2   C4   C3   H2  
+ <PET 12>:  C3   C1   C2   H1  
+ <PET 12>:  C7   C6   C1   C2  
+ <PET 12>:  C1   O3   C7   O4  
+ <PET 13>:  C4   O1   C8   O2  
+ <PET 13>:  C8   C5   C4   C3  
+ <PET 13>:  C6   C4   C5   H3  
+ <PET 13>:  C5   C1   C6   H4  
+ <PET 13>:  C2   C4   C3   H2  
+ <PET 13>:  C3   C1   C2   H1  
+ <PET 13>:  C7   C6   C1   C2  
+ <PET 13>:  C1   O3   C7   O4  
+ <PET 14>:  C4   O1   C8   O2  
+ <PET 14>:  C8   C5   C4   C3  
+ <PET 14>:  C6   C4   C5   H3  
+ <PET 14>:  C5   C1   C6   H4  
+ <PET 14>:  C2   C4   C3   H2  
+ <PET 14>:  C3   C1   C2   H1  
+ <PET 14>:  C7   C6   C1   C2  
+ <PET 14>:  C1   O3   C7   O4  
+ <PET 15>:  C4   O1   C8   O2  
+ <PET 15>:  C8   C5   C4   C3  
+ <PET 15>:  C6   C4   C5   H3  
+ <PET 15>:  C5   C1   C6   H4  
+ <PET 15>:  C2   C4   C3   H2  
+ <PET 15>:  C3   C1   C2   H1  
+ <PET 15>:  C7   C6   C1   C2  
+ <PET 15>:  C1   O3   C7   O4  
+ <PET 16>:  C4   O1   C8   O2  
+ <PET 16>:  C8   C5   C4   C3  
+ <PET 16>:  C6   C4   C5   H3  
+ <PET 16>:  C5   C1   C6   H4  
+ <PET 16>:  C2   C4   C3   H2  
+ <PET 16>:  C3   C1   C2   H1  
+ <PET 16>:  C7   C6   C1   C2  
+ <PET 16>:  C1   O3   C7   O4  
+ <PET 17>:  C4   O1   C8   O2  
+ <PET 17>:  C8   C5   C4   C3  
+ <PET 17>:  C6   C4   C5   H3  
+ <PET 17>:  C5   C1   C6   H4  
+ <PET 17>:  C2   C4   C3   H2  
+ <PET 17>:  C3   C1   C2   H1  
+ <PET 17>:  C7   C6   C1   C2  
+ <PET 17>:  C1   O3   C7   O4  
+ <PET 18>:  C4   O1   C8   O2  
+ <PET 18>:  C8   C5   C4   C3  
+ <PET 18>:  C6   C4   C5   H3  
+ <PET 18>:  C5   C1   C6   H4  
+ <PET 18>:  C2   C4   C3   H2  
+ <PET 18>:  C3   C1   C2   H1  
+ <PET 18>:  C7   C6   C1   C2  
+ <PET 18>:  C1   O3   C7   O4  
+ <PET 19>:  C4   O1   C8   O2  
+ <PET 19>:  C8   C5   C4   C3  
+ <PET 19>:  C6   C4   C5   H3  
+ <PET 19>:  C5   C1   C6   H4  
+ <PET 19>:  C2   C4   C3   H2  
+ <PET 19>:  C3   C1   C2   H1  
+ <PET 19>:  C7   C6   C1   C2  
+ <PET 19>:  C1   O3   C7   O4  
+ <PET 20>:  C4   O1   C8   O2  
+ <PET 20>:  C8   C5   C4   C3  
+ <PET 20>:  C6   C4   C5   H3  
+ <PET 20>:  C5   C1   C6   H4  
+ <PET 20>:  C2   C4   C3   H2  
+ <PET 20>:  C3   C1   C2   H1  
+ <PET 20>:  C7   C6   C1   C2  
+ <PET 20>:  C1   O3   C7   O4  
+ <PET 21>:  C4   O1   C8   O2  
+ <PET 21>:  C8   C5   C4   C3  
+ <PET 21>:  C6   C4   C5   H3  
+ <PET 21>:  C5   C1   C6   H4  
+ <PET 21>:  C2   C4   C3   H2  
+ <PET 21>:  C3   C1   C2   H1  
+ <PET 21>:  C7   C6   C1   C2  
+ <PET 21>:  C1   O3   C7   O4  
+ <PET 22>:  C4   O1   C8   O2  
+ <PET 22>:  C8   C5   C4   C3  
+ <PET 22>:  C6   C4   C5   H3  
+ <PET 22>:  C5   C1   C6   H4  
+ <PET 22>:  C2   C4   C3   H2  
+ <PET 22>:  C3   C1   C2   H1  
+ <PET 22>:  C7   C6   C1   C2  
+ <PET 22>:  C1   O3   C7   O4  
+ <PET 23>:  C4   O1   C8   O2  
+ <PET 23>:  C8   C5   C4   C3  
+ <PET 23>:  C6   C4   C5   H3  
+ <PET 23>:  C5   C1   C6   H4  
+ <PET 23>:  C2   C4   C3   H2  
+ <PET 23>:  C3   C1   C2   H1  
+ <PET 23>:  C7   C6   C1   C2  
+ <PET 23>:  C1   O3   C7   O4  
+ <PET 24>:  C4   O1   C8   O2  
+ <PET 24>:  C8   C5   C4   C3  
+ <PET 24>:  C6   C4   C5   H3  
+ <PET 24>:  C5   C1   C6   H4  
+ <PET 24>:  C2   C4   C3   H2  
+ <PET 24>:  C3   C1   C2   H1  
+ <PET 24>:  C7   C6   C1   C2  
+ <PET 24>:  C1   O3   C7   O4  
+ <PET 25>:  C4   O1   C8   O2  
+ <PET 25>:  C8   C5   C4   C3  
+ <PET 25>:  C6   C4   C5   H3  
+ <PET 25>:  C5   C1   C6   H4  
+ <PET 25>:  C2   C4   C3   H2  
+ <PET 25>:  C3   C1   C2   H1  
+ <PET 25>:  C7   C6   C1   C2  
+ <PET 25>:  C1   O3   C7   O4  
+ <PET 26>:  C4   O1   C8   O2  
+ <PET 26>:  C8   C5   C4   C3  
+ <PET 26>:  C6   C4   C5   H3  
+ <PET 26>:  C5   C1   C6   H4  
+ <PET 26>:  C2   C4   C3   H2  
+ <PET 26>:  C3   C1   C2   H1  
+ <PET 26>:  C7   C6   C1   C2  
+ <PET 26>:  C1   O3   C7   O4  
+ <PET 27>:  C4   O1   C8   O2  
+ <PET 27>:  C8   C5   C4   C3  
+ <PET 27>:  C6   C4   C5   H3  
+ <PET 27>:  C5   C1   C6   H4  
+ <PET 27>:  C2   C4   C3   H2  
+ <PET 27>:  C3   C1   C2   H1  
+ <PET 27>:  C7   C6   C1   C2  
+ <PET 27>:  C1   O3   C7   O4  
+ <PET 28>:  C4   O1   C8   O2  
+ <PET 28>:  C8   C5   C4   C3  
+ <PET 28>:  C6   C4   C5   H3  
+ <PET 28>:  C5   C1   C6   H4  
+ <PET 28>:  C2   C4   C3   H2  
+ <PET 28>:  C3   C1   C2   H1  
+ <PET 28>:  C7   C6   C1   C2  
+ <PET 28>:  C1   O3   C7   O4  
+ <PET 29>:  C4   O1   C8   O2  
+ <PET 29>:  C8   C5   C4   C3  
+ <PET 29>:  C6   C4   C5   H3  
+ <PET 29>:  C5   C1   C6   H4  
+ <PET 29>:  C2   C4   C3   H2  
+ <PET 29>:  C3   C1   C2   H1  
+ <PET 29>:  C7   C6   C1   C2  
+ <PET 29>:  C1   O3   C7   O4  
+ <PET 30>:  C4   O1   C8   O2  
+ <PET 30>:  C8   C5   C4   C3  
+ <PET 30>:  C6   C4   C5   H3  
+ <PET 30>:  C5   C1   C6   H4  
+ <PET 30>:  C2   C4   C3   H2  
+ <PET 30>:  C3   C1   C2   H1  
+ <PET 30>:  C7   C6   C1   C2  
+ <PET 30>:  C1   O3   C7   O4  
+ total 150 improper torsions applied
+ 200 improper torsions in old prep form
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+ (no restraints)
+> quit
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 0; Notes = 0.
+log started: Mon Dec 15 09:51:04 2025
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "op"  "O" "sp3" }
+>> 	{ "oq"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "c5"  "C" "sp3" }
+>> 	{ "c6"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cs"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "cz"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "n5"  "N" "sp3" }
+>> 	{ "n6"  "N" "sp3" }
+>> 	{ "n7"  "N" "sp3" }
+>> 	{ "n8"  "N" "sp3" }
+>> 	{ "n9"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "ni"  "N" "sp2" }
+>> 	{ "nj"  "N" "sp2" }
+>> 	{ "nk"  "N" "sp3" }
+>> 	{ "nl"  "N" "sp3" }
+>> 	{ "nm"  "N" "sp2" }
+>> 	{ "nn"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "np"  "N" "sp3" }
+>> 	{ "nq"  "N" "sp3" }
+>> 	{ "ns"  "N" "sp2" }
+>> 	{ "nt"  "N" "sp2" }
+>> 	{ "nu"  "N" "sp2" }
+>> 	{ "nv"  "N" "sp2" }
+>> 	{ "nx"  "N" "sp3" }
+>> 	{ "ny"  "N" "sp3" }
+>> 	{ "nz"  "N" "sp3" }
+>> 	{ "n+"  "N" "sp3" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "sp"   "S" "sp3" }
+>> 	{ "sq"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pc"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "pe"   "P" "sp3" }
+>> 	{ "pf"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff2.dat
+Loading parameters: /Users/harish/miniconda3/envs/polymer_md/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.2.20, March 2021)
+> 
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/HPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/HPT.prepi
+Loaded UNIT: HPT
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/PEO.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/PEO.prepi
+Loaded UNIT: PEO
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+Loaded UNIT: PET
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+Loaded UNIT: TPT
+> 
+> mol = sequence {PET PET PET PET PET PEO PET PET PET PET PET PEO PET PET PET PET PEO PET PET PET PET PET PET PEO PET PET PET PEO PET PET}
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PEO
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PEO
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PEO
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PEO
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PEO
+Sequence: PET
+Sequence: PET
+> 
+> savepdb mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_random/polymer_50mer.pdb
+Writing pdb file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_random/polymer_50mer.pdb
+> saveamberparm mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_random/polymer_50mer.prmtop                  /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_random/polymer_50mer.inpcrd
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+old PREP-specified impropers:
+ <PET 1>:  C4   O1   C8   O2  
+ <PET 1>:  C8   C5   C4   C3  
+ <PET 1>:  C6   C4   C5   H3  
+ <PET 1>:  C5   C1   C6   H4  
+ <PET 1>:  C2   C4   C3   H2  
+ <PET 1>:  C3   C1   C2   H1  
+ <PET 1>:  C7   C6   C1   C2  
+ <PET 1>:  C1   O3   C7   O4  
+ <PET 2>:  C4   O1   C8   O2  
+ <PET 2>:  C8   C5   C4   C3  
+ <PET 2>:  C6   C4   C5   H3  
+ <PET 2>:  C5   C1   C6   H4  
+ <PET 2>:  C2   C4   C3   H2  
+ <PET 2>:  C3   C1   C2   H1  
+ <PET 2>:  C7   C6   C1   C2  
+ <PET 2>:  C1   O3   C7   O4  
+ <PET 3>:  C4   O1   C8   O2  
+ <PET 3>:  C8   C5   C4   C3  
+ <PET 3>:  C6   C4   C5   H3  
+ <PET 3>:  C5   C1   C6   H4  
+ <PET 3>:  C2   C4   C3   H2  
+ <PET 3>:  C3   C1   C2   H1  
+ <PET 3>:  C7   C6   C1   C2  
+ <PET 3>:  C1   O3   C7   O4  
+ <PET 4>:  C4   O1   C8   O2  
+ <PET 4>:  C8   C5   C4   C3  
+ <PET 4>:  C6   C4   C5   H3  
+ <PET 4>:  C5   C1   C6   H4  
+ <PET 4>:  C2   C4   C3   H2  
+ <PET 4>:  C3   C1   C2   H1  
+ <PET 4>:  C7   C6   C1   C2  
+ <PET 4>:  C1   O3   C7   O4  
+ <PET 5>:  C4   O1   C8   O2  
+ <PET 5>:  C8   C5   C4   C3  
+ <PET 5>:  C6   C4   C5   H3  
+ <PET 5>:  C5   C1   C6   H4  
+ <PET 5>:  C2   C4   C3   H2  
+ <PET 5>:  C3   C1   C2   H1  
+ <PET 5>:  C7   C6   C1   C2  
+ <PET 5>:  C1   O3   C7   O4  
+ <PET 7>:  C4   O1   C8   O2  
+ <PET 7>:  C8   C5   C4   C3  
+ <PET 7>:  C6   C4   C5   H3  
+ <PET 7>:  C5   C1   C6   H4  
+ <PET 7>:  C2   C4   C3   H2  
+ <PET 7>:  C3   C1   C2   H1  
+ <PET 7>:  C7   C6   C1   C2  
+ <PET 7>:  C1   O3   C7   O4  
+ <PET 8>:  C4   O1   C8   O2  
+ <PET 8>:  C8   C5   C4   C3  
+ <PET 8>:  C6   C4   C5   H3  
+ <PET 8>:  C5   C1   C6   H4  
+ <PET 8>:  C2   C4   C3   H2  
+ <PET 8>:  C3   C1   C2   H1  
+ <PET 8>:  C7   C6   C1   C2  
+ <PET 8>:  C1   O3   C7   O4  
+ <PET 9>:  C4   O1   C8   O2  
+ <PET 9>:  C8   C5   C4   C3  
+ <PET 9>:  C6   C4   C5   H3  
+ <PET 9>:  C5   C1   C6   H4  
+ <PET 9>:  C2   C4   C3   H2  
+ <PET 9>:  C3   C1   C2   H1  
+ <PET 9>:  C7   C6   C1   C2  
+ <PET 9>:  C1   O3   C7   O4  
+ <PET 10>:  C4   O1   C8   O2  
+ <PET 10>:  C8   C5   C4   C3  
+ <PET 10>:  C6   C4   C5   H3  
+ <PET 10>:  C5   C1   C6   H4  
+ <PET 10>:  C2   C4   C3   H2  
+ <PET 10>:  C3   C1   C2   H1  
+ <PET 10>:  C7   C6   C1   C2  
+ <PET 10>:  C1   O3   C7   O4  
+ <PET 11>:  C4   O1   C8   O2  
+ <PET 11>:  C8   C5   C4   C3  
+ <PET 11>:  C6   C4   C5   H3  
+ <PET 11>:  C5   C1   C6   H4  
+ <PET 11>:  C2   C4   C3   H2  
+ <PET 11>:  C3   C1   C2   H1  
+ <PET 11>:  C7   C6   C1   C2  
+ <PET 11>:  C1   O3   C7   O4  
+ <PET 13>:  C4   O1   C8   O2  
+ <PET 13>:  C8   C5   C4   C3  
+ <PET 13>:  C6   C4   C5   H3  
+ <PET 13>:  C5   C1   C6   H4  
+ <PET 13>:  C2   C4   C3   H2  
+ <PET 13>:  C3   C1   C2   H1  
+ <PET 13>:  C7   C6   C1   C2  
+ <PET 13>:  C1   O3   C7   O4  
+ <PET 14>:  C4   O1   C8   O2  
+ <PET 14>:  C8   C5   C4   C3  
+ <PET 14>:  C6   C4   C5   H3  
+ <PET 14>:  C5   C1   C6   H4  
+ <PET 14>:  C2   C4   C3   H2  
+ <PET 14>:  C3   C1   C2   H1  
+ <PET 14>:  C7   C6   C1   C2  
+ <PET 14>:  C1   O3   C7   O4  
+ <PET 15>:  C4   O1   C8   O2  
+ <PET 15>:  C8   C5   C4   C3  
+ <PET 15>:  C6   C4   C5   H3  
+ <PET 15>:  C5   C1   C6   H4  
+ <PET 15>:  C2   C4   C3   H2  
+ <PET 15>:  C3   C1   C2   H1  
+ <PET 15>:  C7   C6   C1   C2  
+ <PET 15>:  C1   O3   C7   O4  
+ <PET 16>:  C4   O1   C8   O2  
+ <PET 16>:  C8   C5   C4   C3  
+ <PET 16>:  C6   C4   C5   H3  
+ <PET 16>:  C5   C1   C6   H4  
+ <PET 16>:  C2   C4   C3   H2  
+ <PET 16>:  C3   C1   C2   H1  
+ <PET 16>:  C7   C6   C1   C2  
+ <PET 16>:  C1   O3   C7   O4  
+ <PET 18>:  C4   O1   C8   O2  
+ <PET 18>:  C8   C5   C4   C3  
+ <PET 18>:  C6   C4   C5   H3  
+ <PET 18>:  C5   C1   C6   H4  
+ <PET 18>:  C2   C4   C3   H2  
+ <PET 18>:  C3   C1   C2   H1  
+ <PET 18>:  C7   C6   C1   C2  
+ <PET 18>:  C1   O3   C7   O4  
+ <PET 19>:  C4   O1   C8   O2  
+ <PET 19>:  C8   C5   C4   C3  
+ <PET 19>:  C6   C4   C5   H3  
+ <PET 19>:  C5   C1   C6   H4  
+ <PET 19>:  C2   C4   C3   H2  
+ <PET 19>:  C3   C1   C2   H1  
+ <PET 19>:  C7   C6   C1   C2  
+ <PET 19>:  C1   O3   C7   O4  
+ <PET 20>:  C4   O1   C8   O2  
+ <PET 20>:  C8   C5   C4   C3  
+ <PET 20>:  C6   C4   C5   H3  
+ <PET 20>:  C5   C1   C6   H4  
+ <PET 20>:  C2   C4   C3   H2  
+ <PET 20>:  C3   C1   C2   H1  
+ <PET 20>:  C7   C6   C1   C2  
+ <PET 20>:  C1   O3   C7   O4  
+ <PET 21>:  C4   O1   C8   O2  
+ <PET 21>:  C8   C5   C4   C3  
+ <PET 21>:  C6   C4   C5   H3  
+ <PET 21>:  C5   C1   C6   H4  
+ <PET 21>:  C2   C4   C3   H2  
+ <PET 21>:  C3   C1   C2   H1  
+ <PET 21>:  C7   C6   C1   C2  
+ <PET 21>:  C1   O3   C7   O4  
+ <PET 22>:  C4   O1   C8   O2  
+ <PET 22>:  C8   C5   C4   C3  
+ <PET 22>:  C6   C4   C5   H3  
+ <PET 22>:  C5   C1   C6   H4  
+ <PET 22>:  C2   C4   C3   H2  
+ <PET 22>:  C3   C1   C2   H1  
+ <PET 22>:  C7   C6   C1   C2  
+ <PET 22>:  C1   O3   C7   O4  
+ <PET 23>:  C4   O1   C8   O2  
+ <PET 23>:  C8   C5   C4   C3  
+ <PET 23>:  C6   C4   C5   H3  
+ <PET 23>:  C5   C1   C6   H4  
+ <PET 23>:  C2   C4   C3   H2  
+ <PET 23>:  C3   C1   C2   H1  
+ <PET 23>:  C7   C6   C1   C2  
+ <PET 23>:  C1   O3   C7   O4  
+ <PET 25>:  C4   O1   C8   O2  
+ <PET 25>:  C8   C5   C4   C3  
+ <PET 25>:  C6   C4   C5   H3  
+ <PET 25>:  C5   C1   C6   H4  
+ <PET 25>:  C2   C4   C3   H2  
+ <PET 25>:  C3   C1   C2   H1  
+ <PET 25>:  C7   C6   C1   C2  
+ <PET 25>:  C1   O3   C7   O4  
+ <PET 26>:  C4   O1   C8   O2  
+ <PET 26>:  C8   C5   C4   C3  
+ <PET 26>:  C6   C4   C5   H3  
+ <PET 26>:  C5   C1   C6   H4  
+ <PET 26>:  C2   C4   C3   H2  
+ <PET 26>:  C3   C1   C2   H1  
+ <PET 26>:  C7   C6   C1   C2  
+ <PET 26>:  C1   O3   C7   O4  
+ <PET 27>:  C4   O1   C8   O2  
+ <PET 27>:  C8   C5   C4   C3  
+ <PET 27>:  C6   C4   C5   H3  
+ <PET 27>:  C5   C1   C6   H4  
+ <PET 27>:  C2   C4   C3   H2  
+ <PET 27>:  C3   C1   C2   H1  
+ <PET 27>:  C7   C6   C1   C2  
+ <PET 27>:  C1   O3   C7   O4  
+ <PET 29>:  C4   O1   C8   O2  
+ <PET 29>:  C8   C5   C4   C3  
+ <PET 29>:  C6   C4   C5   H3  
+ <PET 29>:  C5   C1   C6   H4  
+ <PET 29>:  C2   C4   C3   H2  
+ <PET 29>:  C3   C1   C2   H1  
+ <PET 29>:  C7   C6   C1   C2  
+ <PET 29>:  C1   O3   C7   O4  
+ <PET 30>:  C4   O1   C8   O2  
+ <PET 30>:  C8   C5   C4   C3  
+ <PET 30>:  C6   C4   C5   H3  
+ <PET 30>:  C5   C1   C6   H4  
+ <PET 30>:  C2   C4   C3   H2  
+ <PET 30>:  C3   C1   C2   H1  
+ <PET 30>:  C7   C6   C1   C2  
+ <PET 30>:  C1   O3   C7   O4  
+ total 150 improper torsions applied
+ 200 improper torsions in old prep form
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+ (no restraints)
+> quit
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 0; Notes = 0.
+log started: Mon Dec 15 12:19:48 2025
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "op"  "O" "sp3" }
+>> 	{ "oq"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "c5"  "C" "sp3" }
+>> 	{ "c6"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cs"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "cz"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "n5"  "N" "sp3" }
+>> 	{ "n6"  "N" "sp3" }
+>> 	{ "n7"  "N" "sp3" }
+>> 	{ "n8"  "N" "sp3" }
+>> 	{ "n9"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "ni"  "N" "sp2" }
+>> 	{ "nj"  "N" "sp2" }
+>> 	{ "nk"  "N" "sp3" }
+>> 	{ "nl"  "N" "sp3" }
+>> 	{ "nm"  "N" "sp2" }
+>> 	{ "nn"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "np"  "N" "sp3" }
+>> 	{ "nq"  "N" "sp3" }
+>> 	{ "ns"  "N" "sp2" }
+>> 	{ "nt"  "N" "sp2" }
+>> 	{ "nu"  "N" "sp2" }
+>> 	{ "nv"  "N" "sp2" }
+>> 	{ "nx"  "N" "sp3" }
+>> 	{ "ny"  "N" "sp3" }
+>> 	{ "nz"  "N" "sp3" }
+>> 	{ "n+"  "N" "sp3" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "sp"   "S" "sp3" }
+>> 	{ "sq"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pc"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "pe"   "P" "sp3" }
+>> 	{ "pf"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff2.dat
+Loading parameters: /Users/harish/miniconda3/envs/polymer_md/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.2.20, March 2021)
+> 
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/HPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/HPT.prepi
+Loaded UNIT: HPT
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+Loaded UNIT: PET
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+Loaded UNIT: TPT
+> 
+> mol = sequence {PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET}
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+> 
+> savepdb mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PET25_homo/polymer_25mer.pdb
+Writing pdb file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PET25_homo/polymer_25mer.pdb
+> saveamberparm mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PET25_homo/polymer_25mer.prmtop                  /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PET25_homo/polymer_25mer.inpcrd
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+old PREP-specified impropers:
+ <PET 1>:  C4   O1   C8   O2  
+ <PET 1>:  C8   C5   C4   C3  
+ <PET 1>:  C6   C4   C5   H3  
+ <PET 1>:  C5   C1   C6   H4  
+ <PET 1>:  C2   C4   C3   H2  
+ <PET 1>:  C3   C1   C2   H1  
+ <PET 1>:  C7   C6   C1   C2  
+ <PET 1>:  C1   O3   C7   O4  
+ <PET 2>:  C4   O1   C8   O2  
+ <PET 2>:  C8   C5   C4   C3  
+ <PET 2>:  C6   C4   C5   H3  
+ <PET 2>:  C5   C1   C6   H4  
+ <PET 2>:  C2   C4   C3   H2  
+ <PET 2>:  C3   C1   C2   H1  
+ <PET 2>:  C7   C6   C1   C2  
+ <PET 2>:  C1   O3   C7   O4  
+ <PET 3>:  C4   O1   C8   O2  
+ <PET 3>:  C8   C5   C4   C3  
+ <PET 3>:  C6   C4   C5   H3  
+ <PET 3>:  C5   C1   C6   H4  
+ <PET 3>:  C2   C4   C3   H2  
+ <PET 3>:  C3   C1   C2   H1  
+ <PET 3>:  C7   C6   C1   C2  
+ <PET 3>:  C1   O3   C7   O4  
+ <PET 4>:  C4   O1   C8   O2  
+ <PET 4>:  C8   C5   C4   C3  
+ <PET 4>:  C6   C4   C5   H3  
+ <PET 4>:  C5   C1   C6   H4  
+ <PET 4>:  C2   C4   C3   H2  
+ <PET 4>:  C3   C1   C2   H1  
+ <PET 4>:  C7   C6   C1   C2  
+ <PET 4>:  C1   O3   C7   O4  
+ <PET 5>:  C4   O1   C8   O2  
+ <PET 5>:  C8   C5   C4   C3  
+ <PET 5>:  C6   C4   C5   H3  
+ <PET 5>:  C5   C1   C6   H4  
+ <PET 5>:  C2   C4   C3   H2  
+ <PET 5>:  C3   C1   C2   H1  
+ <PET 5>:  C7   C6   C1   C2  
+ <PET 5>:  C1   O3   C7   O4  
+ <PET 6>:  C4   O1   C8   O2  
+ <PET 6>:  C8   C5   C4   C3  
+ <PET 6>:  C6   C4   C5   H3  
+ <PET 6>:  C5   C1   C6   H4  
+ <PET 6>:  C2   C4   C3   H2  
+ <PET 6>:  C3   C1   C2   H1  
+ <PET 6>:  C7   C6   C1   C2  
+ <PET 6>:  C1   O3   C7   O4  
+ <PET 7>:  C4   O1   C8   O2  
+ <PET 7>:  C8   C5   C4   C3  
+ <PET 7>:  C6   C4   C5   H3  
+ <PET 7>:  C5   C1   C6   H4  
+ <PET 7>:  C2   C4   C3   H2  
+ <PET 7>:  C3   C1   C2   H1  
+ <PET 7>:  C7   C6   C1   C2  
+ <PET 7>:  C1   O3   C7   O4  
+ <PET 8>:  C4   O1   C8   O2  
+ <PET 8>:  C8   C5   C4   C3  
+ <PET 8>:  C6   C4   C5   H3  
+ <PET 8>:  C5   C1   C6   H4  
+ <PET 8>:  C2   C4   C3   H2  
+ <PET 8>:  C3   C1   C2   H1  
+ <PET 8>:  C7   C6   C1   C2  
+ <PET 8>:  C1   O3   C7   O4  
+ <PET 9>:  C4   O1   C8   O2  
+ <PET 9>:  C8   C5   C4   C3  
+ <PET 9>:  C6   C4   C5   H3  
+ <PET 9>:  C5   C1   C6   H4  
+ <PET 9>:  C2   C4   C3   H2  
+ <PET 9>:  C3   C1   C2   H1  
+ <PET 9>:  C7   C6   C1   C2  
+ <PET 9>:  C1   O3   C7   O4  
+ <PET 10>:  C4   O1   C8   O2  
+ <PET 10>:  C8   C5   C4   C3  
+ <PET 10>:  C6   C4   C5   H3  
+ <PET 10>:  C5   C1   C6   H4  
+ <PET 10>:  C2   C4   C3   H2  
+ <PET 10>:  C3   C1   C2   H1  
+ <PET 10>:  C7   C6   C1   C2  
+ <PET 10>:  C1   O3   C7   O4  
+ <PET 11>:  C4   O1   C8   O2  
+ <PET 11>:  C8   C5   C4   C3  
+ <PET 11>:  C6   C4   C5   H3  
+ <PET 11>:  C5   C1   C6   H4  
+ <PET 11>:  C2   C4   C3   H2  
+ <PET 11>:  C3   C1   C2   H1  
+ <PET 11>:  C7   C6   C1   C2  
+ <PET 11>:  C1   O3   C7   O4  
+ <PET 12>:  C4   O1   C8   O2  
+ <PET 12>:  C8   C5   C4   C3  
+ <PET 12>:  C6   C4   C5   H3  
+ <PET 12>:  C5   C1   C6   H4  
+ <PET 12>:  C2   C4   C3   H2  
+ <PET 12>:  C3   C1   C2   H1  
+ <PET 12>:  C7   C6   C1   C2  
+ <PET 12>:  C1   O3   C7   O4  
+ <PET 13>:  C4   O1   C8   O2  
+ <PET 13>:  C8   C5   C4   C3  
+ <PET 13>:  C6   C4   C5   H3  
+ <PET 13>:  C5   C1   C6   H4  
+ <PET 13>:  C2   C4   C3   H2  
+ <PET 13>:  C3   C1   C2   H1  
+ <PET 13>:  C7   C6   C1   C2  
+ <PET 13>:  C1   O3   C7   O4  
+ <PET 14>:  C4   O1   C8   O2  
+ <PET 14>:  C8   C5   C4   C3  
+ <PET 14>:  C6   C4   C5   H3  
+ <PET 14>:  C5   C1   C6   H4  
+ <PET 14>:  C2   C4   C3   H2  
+ <PET 14>:  C3   C1   C2   H1  
+ <PET 14>:  C7   C6   C1   C2  
+ <PET 14>:  C1   O3   C7   O4  
+ <PET 15>:  C4   O1   C8   O2  
+ <PET 15>:  C8   C5   C4   C3  
+ <PET 15>:  C6   C4   C5   H3  
+ <PET 15>:  C5   C1   C6   H4  
+ <PET 15>:  C2   C4   C3   H2  
+ <PET 15>:  C3   C1   C2   H1  
+ <PET 15>:  C7   C6   C1   C2  
+ <PET 15>:  C1   O3   C7   O4  
+ <PET 16>:  C4   O1   C8   O2  
+ <PET 16>:  C8   C5   C4   C3  
+ <PET 16>:  C6   C4   C5   H3  
+ <PET 16>:  C5   C1   C6   H4  
+ <PET 16>:  C2   C4   C3   H2  
+ <PET 16>:  C3   C1   C2   H1  
+ <PET 16>:  C7   C6   C1   C2  
+ <PET 16>:  C1   O3   C7   O4  
+ <PET 17>:  C4   O1   C8   O2  
+ <PET 17>:  C8   C5   C4   C3  
+ <PET 17>:  C6   C4   C5   H3  
+ <PET 17>:  C5   C1   C6   H4  
+ <PET 17>:  C2   C4   C3   H2  
+ <PET 17>:  C3   C1   C2   H1  
+ <PET 17>:  C7   C6   C1   C2  
+ <PET 17>:  C1   O3   C7   O4  
+ <PET 18>:  C4   O1   C8   O2  
+ <PET 18>:  C8   C5   C4   C3  
+ <PET 18>:  C6   C4   C5   H3  
+ <PET 18>:  C5   C1   C6   H4  
+ <PET 18>:  C2   C4   C3   H2  
+ <PET 18>:  C3   C1   C2   H1  
+ <PET 18>:  C7   C6   C1   C2  
+ <PET 18>:  C1   O3   C7   O4  
+ <PET 19>:  C4   O1   C8   O2  
+ <PET 19>:  C8   C5   C4   C3  
+ <PET 19>:  C6   C4   C5   H3  
+ <PET 19>:  C5   C1   C6   H4  
+ <PET 19>:  C2   C4   C3   H2  
+ <PET 19>:  C3   C1   C2   H1  
+ <PET 19>:  C7   C6   C1   C2  
+ <PET 19>:  C1   O3   C7   O4  
+ <PET 20>:  C4   O1   C8   O2  
+ <PET 20>:  C8   C5   C4   C3  
+ <PET 20>:  C6   C4   C5   H3  
+ <PET 20>:  C5   C1   C6   H4  
+ <PET 20>:  C2   C4   C3   H2  
+ <PET 20>:  C3   C1   C2   H1  
+ <PET 20>:  C7   C6   C1   C2  
+ <PET 20>:  C1   O3   C7   O4  
+ <PET 21>:  C4   O1   C8   O2  
+ <PET 21>:  C8   C5   C4   C3  
+ <PET 21>:  C6   C4   C5   H3  
+ <PET 21>:  C5   C1   C6   H4  
+ <PET 21>:  C2   C4   C3   H2  
+ <PET 21>:  C3   C1   C2   H1  
+ <PET 21>:  C7   C6   C1   C2  
+ <PET 21>:  C1   O3   C7   O4  
+ <PET 22>:  C4   O1   C8   O2  
+ <PET 22>:  C8   C5   C4   C3  
+ <PET 22>:  C6   C4   C5   H3  
+ <PET 22>:  C5   C1   C6   H4  
+ <PET 22>:  C2   C4   C3   H2  
+ <PET 22>:  C3   C1   C2   H1  
+ <PET 22>:  C7   C6   C1   C2  
+ <PET 22>:  C1   O3   C7   O4  
+ <PET 23>:  C4   O1   C8   O2  
+ <PET 23>:  C8   C5   C4   C3  
+ <PET 23>:  C6   C4   C5   H3  
+ <PET 23>:  C5   C1   C6   H4  
+ <PET 23>:  C2   C4   C3   H2  
+ <PET 23>:  C3   C1   C2   H1  
+ <PET 23>:  C7   C6   C1   C2  
+ <PET 23>:  C1   O3   C7   O4  
+ <PET 24>:  C4   O1   C8   O2  
+ <PET 24>:  C8   C5   C4   C3  
+ <PET 24>:  C6   C4   C5   H3  
+ <PET 24>:  C5   C1   C6   H4  
+ <PET 24>:  C2   C4   C3   H2  
+ <PET 24>:  C3   C1   C2   H1  
+ <PET 24>:  C7   C6   C1   C2  
+ <PET 24>:  C1   O3   C7   O4  
+ <PET 25>:  C4   O1   C8   O2  
+ <PET 25>:  C8   C5   C4   C3  
+ <PET 25>:  C6   C4   C5   H3  
+ <PET 25>:  C5   C1   C6   H4  
+ <PET 25>:  C2   C4   C3   H2  
+ <PET 25>:  C3   C1   C2   H1  
+ <PET 25>:  C7   C6   C1   C2  
+ <PET 25>:  C1   O3   C7   O4  
+ total 150 improper torsions applied
+ 200 improper torsions in old prep form
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+ (no restraints)
+> quit
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 0; Notes = 0.
+log started: Mon Dec 15 12:19:48 2025
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "op"  "O" "sp3" }
+>> 	{ "oq"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "c5"  "C" "sp3" }
+>> 	{ "c6"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cs"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "cz"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "n5"  "N" "sp3" }
+>> 	{ "n6"  "N" "sp3" }
+>> 	{ "n7"  "N" "sp3" }
+>> 	{ "n8"  "N" "sp3" }
+>> 	{ "n9"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "ni"  "N" "sp2" }
+>> 	{ "nj"  "N" "sp2" }
+>> 	{ "nk"  "N" "sp3" }
+>> 	{ "nl"  "N" "sp3" }
+>> 	{ "nm"  "N" "sp2" }
+>> 	{ "nn"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "np"  "N" "sp3" }
+>> 	{ "nq"  "N" "sp3" }
+>> 	{ "ns"  "N" "sp2" }
+>> 	{ "nt"  "N" "sp2" }
+>> 	{ "nu"  "N" "sp2" }
+>> 	{ "nv"  "N" "sp2" }
+>> 	{ "nx"  "N" "sp3" }
+>> 	{ "ny"  "N" "sp3" }
+>> 	{ "nz"  "N" "sp3" }
+>> 	{ "n+"  "N" "sp3" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "sp"   "S" "sp3" }
+>> 	{ "sq"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pc"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "pe"   "P" "sp3" }
+>> 	{ "pf"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff2.dat
+Loading parameters: /Users/harish/miniconda3/envs/polymer_md/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.2.20, March 2021)
+> 
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/HPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/HPT.prepi
+Loaded UNIT: HPT
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/PEO.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/PEO.prepi
+Loaded UNIT: PEO
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+Loaded UNIT: PET
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+Loaded UNIT: TPT
+> 
+> mol = sequence {PEO PEO PEO PEO PEO PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET}
+Sequence: PEO
+Sequence: PEO
+Sequence: PEO
+Sequence: PEO
+Sequence: PEO
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+> 
+> savepdb mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_block/polymer_50mer.pdb
+Writing pdb file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_block/polymer_50mer.pdb
+> saveamberparm mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_block/polymer_50mer.prmtop                  /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_block/polymer_50mer.inpcrd
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+old PREP-specified impropers:
+ <PET 6>:  C4   O1   C8   O2  
+ <PET 6>:  C8   C5   C4   C3  
+ <PET 6>:  C6   C4   C5   H3  
+ <PET 6>:  C5   C1   C6   H4  
+ <PET 6>:  C2   C4   C3   H2  
+ <PET 6>:  C3   C1   C2   H1  
+ <PET 6>:  C7   C6   C1   C2  
+ <PET 6>:  C1   O3   C7   O4  
+ <PET 7>:  C4   O1   C8   O2  
+ <PET 7>:  C8   C5   C4   C3  
+ <PET 7>:  C6   C4   C5   H3  
+ <PET 7>:  C5   C1   C6   H4  
+ <PET 7>:  C2   C4   C3   H2  
+ <PET 7>:  C3   C1   C2   H1  
+ <PET 7>:  C7   C6   C1   C2  
+ <PET 7>:  C1   O3   C7   O4  
+ <PET 8>:  C4   O1   C8   O2  
+ <PET 8>:  C8   C5   C4   C3  
+ <PET 8>:  C6   C4   C5   H3  
+ <PET 8>:  C5   C1   C6   H4  
+ <PET 8>:  C2   C4   C3   H2  
+ <PET 8>:  C3   C1   C2   H1  
+ <PET 8>:  C7   C6   C1   C2  
+ <PET 8>:  C1   O3   C7   O4  
+ <PET 9>:  C4   O1   C8   O2  
+ <PET 9>:  C8   C5   C4   C3  
+ <PET 9>:  C6   C4   C5   H3  
+ <PET 9>:  C5   C1   C6   H4  
+ <PET 9>:  C2   C4   C3   H2  
+ <PET 9>:  C3   C1   C2   H1  
+ <PET 9>:  C7   C6   C1   C2  
+ <PET 9>:  C1   O3   C7   O4  
+ <PET 10>:  C4   O1   C8   O2  
+ <PET 10>:  C8   C5   C4   C3  
+ <PET 10>:  C6   C4   C5   H3  
+ <PET 10>:  C5   C1   C6   H4  
+ <PET 10>:  C2   C4   C3   H2  
+ <PET 10>:  C3   C1   C2   H1  
+ <PET 10>:  C7   C6   C1   C2  
+ <PET 10>:  C1   O3   C7   O4  
+ <PET 11>:  C4   O1   C8   O2  
+ <PET 11>:  C8   C5   C4   C3  
+ <PET 11>:  C6   C4   C5   H3  
+ <PET 11>:  C5   C1   C6   H4  
+ <PET 11>:  C2   C4   C3   H2  
+ <PET 11>:  C3   C1   C2   H1  
+ <PET 11>:  C7   C6   C1   C2  
+ <PET 11>:  C1   O3   C7   O4  
+ <PET 12>:  C4   O1   C8   O2  
+ <PET 12>:  C8   C5   C4   C3  
+ <PET 12>:  C6   C4   C5   H3  
+ <PET 12>:  C5   C1   C6   H4  
+ <PET 12>:  C2   C4   C3   H2  
+ <PET 12>:  C3   C1   C2   H1  
+ <PET 12>:  C7   C6   C1   C2  
+ <PET 12>:  C1   O3   C7   O4  
+ <PET 13>:  C4   O1   C8   O2  
+ <PET 13>:  C8   C5   C4   C3  
+ <PET 13>:  C6   C4   C5   H3  
+ <PET 13>:  C5   C1   C6   H4  
+ <PET 13>:  C2   C4   C3   H2  
+ <PET 13>:  C3   C1   C2   H1  
+ <PET 13>:  C7   C6   C1   C2  
+ <PET 13>:  C1   O3   C7   O4  
+ <PET 14>:  C4   O1   C8   O2  
+ <PET 14>:  C8   C5   C4   C3  
+ <PET 14>:  C6   C4   C5   H3  
+ <PET 14>:  C5   C1   C6   H4  
+ <PET 14>:  C2   C4   C3   H2  
+ <PET 14>:  C3   C1   C2   H1  
+ <PET 14>:  C7   C6   C1   C2  
+ <PET 14>:  C1   O3   C7   O4  
+ <PET 15>:  C4   O1   C8   O2  
+ <PET 15>:  C8   C5   C4   C3  
+ <PET 15>:  C6   C4   C5   H3  
+ <PET 15>:  C5   C1   C6   H4  
+ <PET 15>:  C2   C4   C3   H2  
+ <PET 15>:  C3   C1   C2   H1  
+ <PET 15>:  C7   C6   C1   C2  
+ <PET 15>:  C1   O3   C7   O4  
+ <PET 16>:  C4   O1   C8   O2  
+ <PET 16>:  C8   C5   C4   C3  
+ <PET 16>:  C6   C4   C5   H3  
+ <PET 16>:  C5   C1   C6   H4  
+ <PET 16>:  C2   C4   C3   H2  
+ <PET 16>:  C3   C1   C2   H1  
+ <PET 16>:  C7   C6   C1   C2  
+ <PET 16>:  C1   O3   C7   O4  
+ <PET 17>:  C4   O1   C8   O2  
+ <PET 17>:  C8   C5   C4   C3  
+ <PET 17>:  C6   C4   C5   H3  
+ <PET 17>:  C5   C1   C6   H4  
+ <PET 17>:  C2   C4   C3   H2  
+ <PET 17>:  C3   C1   C2   H1  
+ <PET 17>:  C7   C6   C1   C2  
+ <PET 17>:  C1   O3   C7   O4  
+ <PET 18>:  C4   O1   C8   O2  
+ <PET 18>:  C8   C5   C4   C3  
+ <PET 18>:  C6   C4   C5   H3  
+ <PET 18>:  C5   C1   C6   H4  
+ <PET 18>:  C2   C4   C3   H2  
+ <PET 18>:  C3   C1   C2   H1  
+ <PET 18>:  C7   C6   C1   C2  
+ <PET 18>:  C1   O3   C7   O4  
+ <PET 19>:  C4   O1   C8   O2  
+ <PET 19>:  C8   C5   C4   C3  
+ <PET 19>:  C6   C4   C5   H3  
+ <PET 19>:  C5   C1   C6   H4  
+ <PET 19>:  C2   C4   C3   H2  
+ <PET 19>:  C3   C1   C2   H1  
+ <PET 19>:  C7   C6   C1   C2  
+ <PET 19>:  C1   O3   C7   O4  
+ <PET 20>:  C4   O1   C8   O2  
+ <PET 20>:  C8   C5   C4   C3  
+ <PET 20>:  C6   C4   C5   H3  
+ <PET 20>:  C5   C1   C6   H4  
+ <PET 20>:  C2   C4   C3   H2  
+ <PET 20>:  C3   C1   C2   H1  
+ <PET 20>:  C7   C6   C1   C2  
+ <PET 20>:  C1   O3   C7   O4  
+ <PET 21>:  C4   O1   C8   O2  
+ <PET 21>:  C8   C5   C4   C3  
+ <PET 21>:  C6   C4   C5   H3  
+ <PET 21>:  C5   C1   C6   H4  
+ <PET 21>:  C2   C4   C3   H2  
+ <PET 21>:  C3   C1   C2   H1  
+ <PET 21>:  C7   C6   C1   C2  
+ <PET 21>:  C1   O3   C7   O4  
+ <PET 22>:  C4   O1   C8   O2  
+ <PET 22>:  C8   C5   C4   C3  
+ <PET 22>:  C6   C4   C5   H3  
+ <PET 22>:  C5   C1   C6   H4  
+ <PET 22>:  C2   C4   C3   H2  
+ <PET 22>:  C3   C1   C2   H1  
+ <PET 22>:  C7   C6   C1   C2  
+ <PET 22>:  C1   O3   C7   O4  
+ <PET 23>:  C4   O1   C8   O2  
+ <PET 23>:  C8   C5   C4   C3  
+ <PET 23>:  C6   C4   C5   H3  
+ <PET 23>:  C5   C1   C6   H4  
+ <PET 23>:  C2   C4   C3   H2  
+ <PET 23>:  C3   C1   C2   H1  
+ <PET 23>:  C7   C6   C1   C2  
+ <PET 23>:  C1   O3   C7   O4  
+ <PET 24>:  C4   O1   C8   O2  
+ <PET 24>:  C8   C5   C4   C3  
+ <PET 24>:  C6   C4   C5   H3  
+ <PET 24>:  C5   C1   C6   H4  
+ <PET 24>:  C2   C4   C3   H2  
+ <PET 24>:  C3   C1   C2   H1  
+ <PET 24>:  C7   C6   C1   C2  
+ <PET 24>:  C1   O3   C7   O4  
+ <PET 25>:  C4   O1   C8   O2  
+ <PET 25>:  C8   C5   C4   C3  
+ <PET 25>:  C6   C4   C5   H3  
+ <PET 25>:  C5   C1   C6   H4  
+ <PET 25>:  C2   C4   C3   H2  
+ <PET 25>:  C3   C1   C2   H1  
+ <PET 25>:  C7   C6   C1   C2  
+ <PET 25>:  C1   O3   C7   O4  
+ <PET 26>:  C4   O1   C8   O2  
+ <PET 26>:  C8   C5   C4   C3  
+ <PET 26>:  C6   C4   C5   H3  
+ <PET 26>:  C5   C1   C6   H4  
+ <PET 26>:  C2   C4   C3   H2  
+ <PET 26>:  C3   C1   C2   H1  
+ <PET 26>:  C7   C6   C1   C2  
+ <PET 26>:  C1   O3   C7   O4  
+ <PET 27>:  C4   O1   C8   O2  
+ <PET 27>:  C8   C5   C4   C3  
+ <PET 27>:  C6   C4   C5   H3  
+ <PET 27>:  C5   C1   C6   H4  
+ <PET 27>:  C2   C4   C3   H2  
+ <PET 27>:  C3   C1   C2   H1  
+ <PET 27>:  C7   C6   C1   C2  
+ <PET 27>:  C1   O3   C7   O4  
+ <PET 28>:  C4   O1   C8   O2  
+ <PET 28>:  C8   C5   C4   C3  
+ <PET 28>:  C6   C4   C5   H3  
+ <PET 28>:  C5   C1   C6   H4  
+ <PET 28>:  C2   C4   C3   H2  
+ <PET 28>:  C3   C1   C2   H1  
+ <PET 28>:  C7   C6   C1   C2  
+ <PET 28>:  C1   O3   C7   O4  
+ <PET 29>:  C4   O1   C8   O2  
+ <PET 29>:  C8   C5   C4   C3  
+ <PET 29>:  C6   C4   C5   H3  
+ <PET 29>:  C5   C1   C6   H4  
+ <PET 29>:  C2   C4   C3   H2  
+ <PET 29>:  C3   C1   C2   H1  
+ <PET 29>:  C7   C6   C1   C2  
+ <PET 29>:  C1   O3   C7   O4  
+ <PET 30>:  C4   O1   C8   O2  
+ <PET 30>:  C8   C5   C4   C3  
+ <PET 30>:  C6   C4   C5   H3  
+ <PET 30>:  C5   C1   C6   H4  
+ <PET 30>:  C2   C4   C3   H2  
+ <PET 30>:  C3   C1   C2   H1  
+ <PET 30>:  C7   C6   C1   C2  
+ <PET 30>:  C1   O3   C7   O4  
+ total 150 improper torsions applied
+ 200 improper torsions in old prep form
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+ (no restraints)
+> quit
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 0; Notes = 0.
+log started: Mon Dec 15 12:19:48 2025
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "op"  "O" "sp3" }
+>> 	{ "oq"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "c5"  "C" "sp3" }
+>> 	{ "c6"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cs"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "cz"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "n5"  "N" "sp3" }
+>> 	{ "n6"  "N" "sp3" }
+>> 	{ "n7"  "N" "sp3" }
+>> 	{ "n8"  "N" "sp3" }
+>> 	{ "n9"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "ni"  "N" "sp2" }
+>> 	{ "nj"  "N" "sp2" }
+>> 	{ "nk"  "N" "sp3" }
+>> 	{ "nl"  "N" "sp3" }
+>> 	{ "nm"  "N" "sp2" }
+>> 	{ "nn"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "np"  "N" "sp3" }
+>> 	{ "nq"  "N" "sp3" }
+>> 	{ "ns"  "N" "sp2" }
+>> 	{ "nt"  "N" "sp2" }
+>> 	{ "nu"  "N" "sp2" }
+>> 	{ "nv"  "N" "sp2" }
+>> 	{ "nx"  "N" "sp3" }
+>> 	{ "ny"  "N" "sp3" }
+>> 	{ "nz"  "N" "sp3" }
+>> 	{ "n+"  "N" "sp3" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "sp"   "S" "sp3" }
+>> 	{ "sq"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pc"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "pe"   "P" "sp3" }
+>> 	{ "pf"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff2.dat
+Loading parameters: /Users/harish/miniconda3/envs/polymer_md/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.2.20, March 2021)
+> 
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/HPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/HPT.prepi
+Loaded UNIT: HPT
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/PEO.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/PEO.prepi
+Loaded UNIT: PEO
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+Loaded UNIT: PET
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+Loaded UNIT: TPT
+> 
+> mol = sequence {PET PET PET PET PEO PET PEO PET PEO PET PET PET PET PET PET PET PEO PET PET PET PET PET PET PET PET PEO PET PET PET PET}
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PEO
+Sequence: PET
+Sequence: PEO
+Sequence: PET
+Sequence: PEO
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PEO
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PEO
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+> 
+> savepdb mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_random/polymer_50mer.pdb
+Writing pdb file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_random/polymer_50mer.pdb
+> saveamberparm mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_random/polymer_50mer.prmtop                  /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_random/polymer_50mer.inpcrd
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+old PREP-specified impropers:
+ <PET 1>:  C4   O1   C8   O2  
+ <PET 1>:  C8   C5   C4   C3  
+ <PET 1>:  C6   C4   C5   H3  
+ <PET 1>:  C5   C1   C6   H4  
+ <PET 1>:  C2   C4   C3   H2  
+ <PET 1>:  C3   C1   C2   H1  
+ <PET 1>:  C7   C6   C1   C2  
+ <PET 1>:  C1   O3   C7   O4  
+ <PET 2>:  C4   O1   C8   O2  
+ <PET 2>:  C8   C5   C4   C3  
+ <PET 2>:  C6   C4   C5   H3  
+ <PET 2>:  C5   C1   C6   H4  
+ <PET 2>:  C2   C4   C3   H2  
+ <PET 2>:  C3   C1   C2   H1  
+ <PET 2>:  C7   C6   C1   C2  
+ <PET 2>:  C1   O3   C7   O4  
+ <PET 3>:  C4   O1   C8   O2  
+ <PET 3>:  C8   C5   C4   C3  
+ <PET 3>:  C6   C4   C5   H3  
+ <PET 3>:  C5   C1   C6   H4  
+ <PET 3>:  C2   C4   C3   H2  
+ <PET 3>:  C3   C1   C2   H1  
+ <PET 3>:  C7   C6   C1   C2  
+ <PET 3>:  C1   O3   C7   O4  
+ <PET 4>:  C4   O1   C8   O2  
+ <PET 4>:  C8   C5   C4   C3  
+ <PET 4>:  C6   C4   C5   H3  
+ <PET 4>:  C5   C1   C6   H4  
+ <PET 4>:  C2   C4   C3   H2  
+ <PET 4>:  C3   C1   C2   H1  
+ <PET 4>:  C7   C6   C1   C2  
+ <PET 4>:  C1   O3   C7   O4  
+ <PET 6>:  C4   O1   C8   O2  
+ <PET 6>:  C8   C5   C4   C3  
+ <PET 6>:  C6   C4   C5   H3  
+ <PET 6>:  C5   C1   C6   H4  
+ <PET 6>:  C2   C4   C3   H2  
+ <PET 6>:  C3   C1   C2   H1  
+ <PET 6>:  C7   C6   C1   C2  
+ <PET 6>:  C1   O3   C7   O4  
+ <PET 8>:  C4   O1   C8   O2  
+ <PET 8>:  C8   C5   C4   C3  
+ <PET 8>:  C6   C4   C5   H3  
+ <PET 8>:  C5   C1   C6   H4  
+ <PET 8>:  C2   C4   C3   H2  
+ <PET 8>:  C3   C1   C2   H1  
+ <PET 8>:  C7   C6   C1   C2  
+ <PET 8>:  C1   O3   C7   O4  
+ <PET 10>:  C4   O1   C8   O2  
+ <PET 10>:  C8   C5   C4   C3  
+ <PET 10>:  C6   C4   C5   H3  
+ <PET 10>:  C5   C1   C6   H4  
+ <PET 10>:  C2   C4   C3   H2  
+ <PET 10>:  C3   C1   C2   H1  
+ <PET 10>:  C7   C6   C1   C2  
+ <PET 10>:  C1   O3   C7   O4  
+ <PET 11>:  C4   O1   C8   O2  
+ <PET 11>:  C8   C5   C4   C3  
+ <PET 11>:  C6   C4   C5   H3  
+ <PET 11>:  C5   C1   C6   H4  
+ <PET 11>:  C2   C4   C3   H2  
+ <PET 11>:  C3   C1   C2   H1  
+ <PET 11>:  C7   C6   C1   C2  
+ <PET 11>:  C1   O3   C7   O4  
+ <PET 12>:  C4   O1   C8   O2  
+ <PET 12>:  C8   C5   C4   C3  
+ <PET 12>:  C6   C4   C5   H3  
+ <PET 12>:  C5   C1   C6   H4  
+ <PET 12>:  C2   C4   C3   H2  
+ <PET 12>:  C3   C1   C2   H1  
+ <PET 12>:  C7   C6   C1   C2  
+ <PET 12>:  C1   O3   C7   O4  
+ <PET 13>:  C4   O1   C8   O2  
+ <PET 13>:  C8   C5   C4   C3  
+ <PET 13>:  C6   C4   C5   H3  
+ <PET 13>:  C5   C1   C6   H4  
+ <PET 13>:  C2   C4   C3   H2  
+ <PET 13>:  C3   C1   C2   H1  
+ <PET 13>:  C7   C6   C1   C2  
+ <PET 13>:  C1   O3   C7   O4  
+ <PET 14>:  C4   O1   C8   O2  
+ <PET 14>:  C8   C5   C4   C3  
+ <PET 14>:  C6   C4   C5   H3  
+ <PET 14>:  C5   C1   C6   H4  
+ <PET 14>:  C2   C4   C3   H2  
+ <PET 14>:  C3   C1   C2   H1  
+ <PET 14>:  C7   C6   C1   C2  
+ <PET 14>:  C1   O3   C7   O4  
+ <PET 15>:  C4   O1   C8   O2  
+ <PET 15>:  C8   C5   C4   C3  
+ <PET 15>:  C6   C4   C5   H3  
+ <PET 15>:  C5   C1   C6   H4  
+ <PET 15>:  C2   C4   C3   H2  
+ <PET 15>:  C3   C1   C2   H1  
+ <PET 15>:  C7   C6   C1   C2  
+ <PET 15>:  C1   O3   C7   O4  
+ <PET 16>:  C4   O1   C8   O2  
+ <PET 16>:  C8   C5   C4   C3  
+ <PET 16>:  C6   C4   C5   H3  
+ <PET 16>:  C5   C1   C6   H4  
+ <PET 16>:  C2   C4   C3   H2  
+ <PET 16>:  C3   C1   C2   H1  
+ <PET 16>:  C7   C6   C1   C2  
+ <PET 16>:  C1   O3   C7   O4  
+ <PET 18>:  C4   O1   C8   O2  
+ <PET 18>:  C8   C5   C4   C3  
+ <PET 18>:  C6   C4   C5   H3  
+ <PET 18>:  C5   C1   C6   H4  
+ <PET 18>:  C2   C4   C3   H2  
+ <PET 18>:  C3   C1   C2   H1  
+ <PET 18>:  C7   C6   C1   C2  
+ <PET 18>:  C1   O3   C7   O4  
+ <PET 19>:  C4   O1   C8   O2  
+ <PET 19>:  C8   C5   C4   C3  
+ <PET 19>:  C6   C4   C5   H3  
+ <PET 19>:  C5   C1   C6   H4  
+ <PET 19>:  C2   C4   C3   H2  
+ <PET 19>:  C3   C1   C2   H1  
+ <PET 19>:  C7   C6   C1   C2  
+ <PET 19>:  C1   O3   C7   O4  
+ <PET 20>:  C4   O1   C8   O2  
+ <PET 20>:  C8   C5   C4   C3  
+ <PET 20>:  C6   C4   C5   H3  
+ <PET 20>:  C5   C1   C6   H4  
+ <PET 20>:  C2   C4   C3   H2  
+ <PET 20>:  C3   C1   C2   H1  
+ <PET 20>:  C7   C6   C1   C2  
+ <PET 20>:  C1   O3   C7   O4  
+ <PET 21>:  C4   O1   C8   O2  
+ <PET 21>:  C8   C5   C4   C3  
+ <PET 21>:  C6   C4   C5   H3  
+ <PET 21>:  C5   C1   C6   H4  
+ <PET 21>:  C2   C4   C3   H2  
+ <PET 21>:  C3   C1   C2   H1  
+ <PET 21>:  C7   C6   C1   C2  
+ <PET 21>:  C1   O3   C7   O4  
+ <PET 22>:  C4   O1   C8   O2  
+ <PET 22>:  C8   C5   C4   C3  
+ <PET 22>:  C6   C4   C5   H3  
+ <PET 22>:  C5   C1   C6   H4  
+ <PET 22>:  C2   C4   C3   H2  
+ <PET 22>:  C3   C1   C2   H1  
+ <PET 22>:  C7   C6   C1   C2  
+ <PET 22>:  C1   O3   C7   O4  
+ <PET 23>:  C4   O1   C8   O2  
+ <PET 23>:  C8   C5   C4   C3  
+ <PET 23>:  C6   C4   C5   H3  
+ <PET 23>:  C5   C1   C6   H4  
+ <PET 23>:  C2   C4   C3   H2  
+ <PET 23>:  C3   C1   C2   H1  
+ <PET 23>:  C7   C6   C1   C2  
+ <PET 23>:  C1   O3   C7   O4  
+ <PET 24>:  C4   O1   C8   O2  
+ <PET 24>:  C8   C5   C4   C3  
+ <PET 24>:  C6   C4   C5   H3  
+ <PET 24>:  C5   C1   C6   H4  
+ <PET 24>:  C2   C4   C3   H2  
+ <PET 24>:  C3   C1   C2   H1  
+ <PET 24>:  C7   C6   C1   C2  
+ <PET 24>:  C1   O3   C7   O4  
+ <PET 25>:  C4   O1   C8   O2  
+ <PET 25>:  C8   C5   C4   C3  
+ <PET 25>:  C6   C4   C5   H3  
+ <PET 25>:  C5   C1   C6   H4  
+ <PET 25>:  C2   C4   C3   H2  
+ <PET 25>:  C3   C1   C2   H1  
+ <PET 25>:  C7   C6   C1   C2  
+ <PET 25>:  C1   O3   C7   O4  
+ <PET 27>:  C4   O1   C8   O2  
+ <PET 27>:  C8   C5   C4   C3  
+ <PET 27>:  C6   C4   C5   H3  
+ <PET 27>:  C5   C1   C6   H4  
+ <PET 27>:  C2   C4   C3   H2  
+ <PET 27>:  C3   C1   C2   H1  
+ <PET 27>:  C7   C6   C1   C2  
+ <PET 27>:  C1   O3   C7   O4  
+ <PET 28>:  C4   O1   C8   O2  
+ <PET 28>:  C8   C5   C4   C3  
+ <PET 28>:  C6   C4   C5   H3  
+ <PET 28>:  C5   C1   C6   H4  
+ <PET 28>:  C2   C4   C3   H2  
+ <PET 28>:  C3   C1   C2   H1  
+ <PET 28>:  C7   C6   C1   C2  
+ <PET 28>:  C1   O3   C7   O4  
+ <PET 29>:  C4   O1   C8   O2  
+ <PET 29>:  C8   C5   C4   C3  
+ <PET 29>:  C6   C4   C5   H3  
+ <PET 29>:  C5   C1   C6   H4  
+ <PET 29>:  C2   C4   C3   H2  
+ <PET 29>:  C3   C1   C2   H1  
+ <PET 29>:  C7   C6   C1   C2  
+ <PET 29>:  C1   O3   C7   O4  
+ <PET 30>:  C4   O1   C8   O2  
+ <PET 30>:  C8   C5   C4   C3  
+ <PET 30>:  C6   C4   C5   H3  
+ <PET 30>:  C5   C1   C6   H4  
+ <PET 30>:  C2   C4   C3   H2  
+ <PET 30>:  C3   C1   C2   H1  
+ <PET 30>:  C7   C6   C1   C2  
+ <PET 30>:  C1   O3   C7   O4  
+ total 150 improper torsions applied
+ 200 improper torsions in old prep form
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+ (no restraints)
+> quit
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 0; Notes = 0.
+log started: Mon Dec 15 12:20:05 2025
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "op"  "O" "sp3" }
+>> 	{ "oq"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "c5"  "C" "sp3" }
+>> 	{ "c6"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cs"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "cz"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "n5"  "N" "sp3" }
+>> 	{ "n6"  "N" "sp3" }
+>> 	{ "n7"  "N" "sp3" }
+>> 	{ "n8"  "N" "sp3" }
+>> 	{ "n9"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "ni"  "N" "sp2" }
+>> 	{ "nj"  "N" "sp2" }
+>> 	{ "nk"  "N" "sp3" }
+>> 	{ "nl"  "N" "sp3" }
+>> 	{ "nm"  "N" "sp2" }
+>> 	{ "nn"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "np"  "N" "sp3" }
+>> 	{ "nq"  "N" "sp3" }
+>> 	{ "ns"  "N" "sp2" }
+>> 	{ "nt"  "N" "sp2" }
+>> 	{ "nu"  "N" "sp2" }
+>> 	{ "nv"  "N" "sp2" }
+>> 	{ "nx"  "N" "sp3" }
+>> 	{ "ny"  "N" "sp3" }
+>> 	{ "nz"  "N" "sp3" }
+>> 	{ "n+"  "N" "sp3" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "sp"   "S" "sp3" }
+>> 	{ "sq"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pc"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "pe"   "P" "sp3" }
+>> 	{ "pf"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff2.dat
+Loading parameters: /Users/harish/miniconda3/envs/polymer_md/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.2.20, March 2021)
+> 
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/HPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/HPT.prepi
+Loaded UNIT: HPT
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/PEO.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/PEO.prepi
+Loaded UNIT: PEO
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+Loaded UNIT: PET
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+Loaded UNIT: TPT
+> 
+> mol = sequence {PEO PEO PEO PEO PEO PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET}
+Sequence: PEO
+Sequence: PEO
+Sequence: PEO
+Sequence: PEO
+Sequence: PEO
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+> 
+> savepdb mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_block/polymer_50mer.pdb
+Writing pdb file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_block/polymer_50mer.pdb
+> saveamberparm mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_block/polymer_50mer.prmtop                  /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_block/polymer_50mer.inpcrd
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+old PREP-specified impropers:
+ <PET 6>:  C4   O1   C8   O2  
+ <PET 6>:  C8   C5   C4   C3  
+ <PET 6>:  C6   C4   C5   H3  
+ <PET 6>:  C5   C1   C6   H4  
+ <PET 6>:  C2   C4   C3   H2  
+ <PET 6>:  C3   C1   C2   H1  
+ <PET 6>:  C7   C6   C1   C2  
+ <PET 6>:  C1   O3   C7   O4  
+ <PET 7>:  C4   O1   C8   O2  
+ <PET 7>:  C8   C5   C4   C3  
+ <PET 7>:  C6   C4   C5   H3  
+ <PET 7>:  C5   C1   C6   H4  
+ <PET 7>:  C2   C4   C3   H2  
+ <PET 7>:  C3   C1   C2   H1  
+ <PET 7>:  C7   C6   C1   C2  
+ <PET 7>:  C1   O3   C7   O4  
+ <PET 8>:  C4   O1   C8   O2  
+ <PET 8>:  C8   C5   C4   C3  
+ <PET 8>:  C6   C4   C5   H3  
+ <PET 8>:  C5   C1   C6   H4  
+ <PET 8>:  C2   C4   C3   H2  
+ <PET 8>:  C3   C1   C2   H1  
+ <PET 8>:  C7   C6   C1   C2  
+ <PET 8>:  C1   O3   C7   O4  
+ <PET 9>:  C4   O1   C8   O2  
+ <PET 9>:  C8   C5   C4   C3  
+ <PET 9>:  C6   C4   C5   H3  
+ <PET 9>:  C5   C1   C6   H4  
+ <PET 9>:  C2   C4   C3   H2  
+ <PET 9>:  C3   C1   C2   H1  
+ <PET 9>:  C7   C6   C1   C2  
+ <PET 9>:  C1   O3   C7   O4  
+ <PET 10>:  C4   O1   C8   O2  
+ <PET 10>:  C8   C5   C4   C3  
+ <PET 10>:  C6   C4   C5   H3  
+ <PET 10>:  C5   C1   C6   H4  
+ <PET 10>:  C2   C4   C3   H2  
+ <PET 10>:  C3   C1   C2   H1  
+ <PET 10>:  C7   C6   C1   C2  
+ <PET 10>:  C1   O3   C7   O4  
+ <PET 11>:  C4   O1   C8   O2  
+ <PET 11>:  C8   C5   C4   C3  
+ <PET 11>:  C6   C4   C5   H3  
+ <PET 11>:  C5   C1   C6   H4  
+ <PET 11>:  C2   C4   C3   H2  
+ <PET 11>:  C3   C1   C2   H1  
+ <PET 11>:  C7   C6   C1   C2  
+ <PET 11>:  C1   O3   C7   O4  
+ <PET 12>:  C4   O1   C8   O2  
+ <PET 12>:  C8   C5   C4   C3  
+ <PET 12>:  C6   C4   C5   H3  
+ <PET 12>:  C5   C1   C6   H4  
+ <PET 12>:  C2   C4   C3   H2  
+ <PET 12>:  C3   C1   C2   H1  
+ <PET 12>:  C7   C6   C1   C2  
+ <PET 12>:  C1   O3   C7   O4  
+ <PET 13>:  C4   O1   C8   O2  
+ <PET 13>:  C8   C5   C4   C3  
+ <PET 13>:  C6   C4   C5   H3  
+ <PET 13>:  C5   C1   C6   H4  
+ <PET 13>:  C2   C4   C3   H2  
+ <PET 13>:  C3   C1   C2   H1  
+ <PET 13>:  C7   C6   C1   C2  
+ <PET 13>:  C1   O3   C7   O4  
+ <PET 14>:  C4   O1   C8   O2  
+ <PET 14>:  C8   C5   C4   C3  
+ <PET 14>:  C6   C4   C5   H3  
+ <PET 14>:  C5   C1   C6   H4  
+ <PET 14>:  C2   C4   C3   H2  
+ <PET 14>:  C3   C1   C2   H1  
+ <PET 14>:  C7   C6   C1   C2  
+ <PET 14>:  C1   O3   C7   O4  
+ <PET 15>:  C4   O1   C8   O2  
+ <PET 15>:  C8   C5   C4   C3  
+ <PET 15>:  C6   C4   C5   H3  
+ <PET 15>:  C5   C1   C6   H4  
+ <PET 15>:  C2   C4   C3   H2  
+ <PET 15>:  C3   C1   C2   H1  
+ <PET 15>:  C7   C6   C1   C2  
+ <PET 15>:  C1   O3   C7   O4  
+ <PET 16>:  C4   O1   C8   O2  
+ <PET 16>:  C8   C5   C4   C3  
+ <PET 16>:  C6   C4   C5   H3  
+ <PET 16>:  C5   C1   C6   H4  
+ <PET 16>:  C2   C4   C3   H2  
+ <PET 16>:  C3   C1   C2   H1  
+ <PET 16>:  C7   C6   C1   C2  
+ <PET 16>:  C1   O3   C7   O4  
+ <PET 17>:  C4   O1   C8   O2  
+ <PET 17>:  C8   C5   C4   C3  
+ <PET 17>:  C6   C4   C5   H3  
+ <PET 17>:  C5   C1   C6   H4  
+ <PET 17>:  C2   C4   C3   H2  
+ <PET 17>:  C3   C1   C2   H1  
+ <PET 17>:  C7   C6   C1   C2  
+ <PET 17>:  C1   O3   C7   O4  
+ <PET 18>:  C4   O1   C8   O2  
+ <PET 18>:  C8   C5   C4   C3  
+ <PET 18>:  C6   C4   C5   H3  
+ <PET 18>:  C5   C1   C6   H4  
+ <PET 18>:  C2   C4   C3   H2  
+ <PET 18>:  C3   C1   C2   H1  
+ <PET 18>:  C7   C6   C1   C2  
+ <PET 18>:  C1   O3   C7   O4  
+ <PET 19>:  C4   O1   C8   O2  
+ <PET 19>:  C8   C5   C4   C3  
+ <PET 19>:  C6   C4   C5   H3  
+ <PET 19>:  C5   C1   C6   H4  
+ <PET 19>:  C2   C4   C3   H2  
+ <PET 19>:  C3   C1   C2   H1  
+ <PET 19>:  C7   C6   C1   C2  
+ <PET 19>:  C1   O3   C7   O4  
+ <PET 20>:  C4   O1   C8   O2  
+ <PET 20>:  C8   C5   C4   C3  
+ <PET 20>:  C6   C4   C5   H3  
+ <PET 20>:  C5   C1   C6   H4  
+ <PET 20>:  C2   C4   C3   H2  
+ <PET 20>:  C3   C1   C2   H1  
+ <PET 20>:  C7   C6   C1   C2  
+ <PET 20>:  C1   O3   C7   O4  
+ <PET 21>:  C4   O1   C8   O2  
+ <PET 21>:  C8   C5   C4   C3  
+ <PET 21>:  C6   C4   C5   H3  
+ <PET 21>:  C5   C1   C6   H4  
+ <PET 21>:  C2   C4   C3   H2  
+ <PET 21>:  C3   C1   C2   H1  
+ <PET 21>:  C7   C6   C1   C2  
+ <PET 21>:  C1   O3   C7   O4  
+ <PET 22>:  C4   O1   C8   O2  
+ <PET 22>:  C8   C5   C4   C3  
+ <PET 22>:  C6   C4   C5   H3  
+ <PET 22>:  C5   C1   C6   H4  
+ <PET 22>:  C2   C4   C3   H2  
+ <PET 22>:  C3   C1   C2   H1  
+ <PET 22>:  C7   C6   C1   C2  
+ <PET 22>:  C1   O3   C7   O4  
+ <PET 23>:  C4   O1   C8   O2  
+ <PET 23>:  C8   C5   C4   C3  
+ <PET 23>:  C6   C4   C5   H3  
+ <PET 23>:  C5   C1   C6   H4  
+ <PET 23>:  C2   C4   C3   H2  
+ <PET 23>:  C3   C1   C2   H1  
+ <PET 23>:  C7   C6   C1   C2  
+ <PET 23>:  C1   O3   C7   O4  
+ <PET 24>:  C4   O1   C8   O2  
+ <PET 24>:  C8   C5   C4   C3  
+ <PET 24>:  C6   C4   C5   H3  
+ <PET 24>:  C5   C1   C6   H4  
+ <PET 24>:  C2   C4   C3   H2  
+ <PET 24>:  C3   C1   C2   H1  
+ <PET 24>:  C7   C6   C1   C2  
+ <PET 24>:  C1   O3   C7   O4  
+ <PET 25>:  C4   O1   C8   O2  
+ <PET 25>:  C8   C5   C4   C3  
+ <PET 25>:  C6   C4   C5   H3  
+ <PET 25>:  C5   C1   C6   H4  
+ <PET 25>:  C2   C4   C3   H2  
+ <PET 25>:  C3   C1   C2   H1  
+ <PET 25>:  C7   C6   C1   C2  
+ <PET 25>:  C1   O3   C7   O4  
+ <PET 26>:  C4   O1   C8   O2  
+ <PET 26>:  C8   C5   C4   C3  
+ <PET 26>:  C6   C4   C5   H3  
+ <PET 26>:  C5   C1   C6   H4  
+ <PET 26>:  C2   C4   C3   H2  
+ <PET 26>:  C3   C1   C2   H1  
+ <PET 26>:  C7   C6   C1   C2  
+ <PET 26>:  C1   O3   C7   O4  
+ <PET 27>:  C4   O1   C8   O2  
+ <PET 27>:  C8   C5   C4   C3  
+ <PET 27>:  C6   C4   C5   H3  
+ <PET 27>:  C5   C1   C6   H4  
+ <PET 27>:  C2   C4   C3   H2  
+ <PET 27>:  C3   C1   C2   H1  
+ <PET 27>:  C7   C6   C1   C2  
+ <PET 27>:  C1   O3   C7   O4  
+ <PET 28>:  C4   O1   C8   O2  
+ <PET 28>:  C8   C5   C4   C3  
+ <PET 28>:  C6   C4   C5   H3  
+ <PET 28>:  C5   C1   C6   H4  
+ <PET 28>:  C2   C4   C3   H2  
+ <PET 28>:  C3   C1   C2   H1  
+ <PET 28>:  C7   C6   C1   C2  
+ <PET 28>:  C1   O3   C7   O4  
+ <PET 29>:  C4   O1   C8   O2  
+ <PET 29>:  C8   C5   C4   C3  
+ <PET 29>:  C6   C4   C5   H3  
+ <PET 29>:  C5   C1   C6   H4  
+ <PET 29>:  C2   C4   C3   H2  
+ <PET 29>:  C3   C1   C2   H1  
+ <PET 29>:  C7   C6   C1   C2  
+ <PET 29>:  C1   O3   C7   O4  
+ <PET 30>:  C4   O1   C8   O2  
+ <PET 30>:  C8   C5   C4   C3  
+ <PET 30>:  C6   C4   C5   H3  
+ <PET 30>:  C5   C1   C6   H4  
+ <PET 30>:  C2   C4   C3   H2  
+ <PET 30>:  C3   C1   C2   H1  
+ <PET 30>:  C7   C6   C1   C2  
+ <PET 30>:  C1   O3   C7   O4  
+ total 150 improper torsions applied
+ 200 improper torsions in old prep form
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+ (no restraints)
+> quit
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 0; Notes = 0.
+log started: Mon Dec 15 12:21:40 2025
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "op"  "O" "sp3" }
+>> 	{ "oq"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "c5"  "C" "sp3" }
+>> 	{ "c6"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cs"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "cz"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "n5"  "N" "sp3" }
+>> 	{ "n6"  "N" "sp3" }
+>> 	{ "n7"  "N" "sp3" }
+>> 	{ "n8"  "N" "sp3" }
+>> 	{ "n9"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "ni"  "N" "sp2" }
+>> 	{ "nj"  "N" "sp2" }
+>> 	{ "nk"  "N" "sp3" }
+>> 	{ "nl"  "N" "sp3" }
+>> 	{ "nm"  "N" "sp2" }
+>> 	{ "nn"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "np"  "N" "sp3" }
+>> 	{ "nq"  "N" "sp3" }
+>> 	{ "ns"  "N" "sp2" }
+>> 	{ "nt"  "N" "sp2" }
+>> 	{ "nu"  "N" "sp2" }
+>> 	{ "nv"  "N" "sp2" }
+>> 	{ "nx"  "N" "sp3" }
+>> 	{ "ny"  "N" "sp3" }
+>> 	{ "nz"  "N" "sp3" }
+>> 	{ "n+"  "N" "sp3" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "sp"   "S" "sp3" }
+>> 	{ "sq"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pc"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "pe"   "P" "sp3" }
+>> 	{ "pf"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff2.dat
+Loading parameters: /Users/harish/miniconda3/envs/polymer_md/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.2.20, March 2021)
+> 
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/HPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/HPT.prepi
+Loaded UNIT: HPT
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/PEO.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PEO/PEO.prepi
+Loaded UNIT: PEO
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+Loaded UNIT: PET
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+Loaded UNIT: TPT
+> 
+> mol = sequence {PET PEO PET PET PET PEO PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PEO PET PET PEO PEO PET}
+Sequence: PET
+Sequence: PEO
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PEO
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PEO
+Sequence: PET
+Sequence: PET
+Sequence: PEO
+Sequence: PEO
+Sequence: PET
+> 
+> savepdb mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_random/polymer_50mer.pdb
+Writing pdb file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_random/polymer_50mer.pdb
+> saveamberparm mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_random/polymer_50mer.prmtop                  /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PEO25_PET25_random/polymer_50mer.inpcrd
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+old PREP-specified impropers:
+ <PET 1>:  C4   O1   C8   O2  
+ <PET 1>:  C8   C5   C4   C3  
+ <PET 1>:  C6   C4   C5   H3  
+ <PET 1>:  C5   C1   C6   H4  
+ <PET 1>:  C2   C4   C3   H2  
+ <PET 1>:  C3   C1   C2   H1  
+ <PET 1>:  C7   C6   C1   C2  
+ <PET 1>:  C1   O3   C7   O4  
+ <PET 3>:  C4   O1   C8   O2  
+ <PET 3>:  C8   C5   C4   C3  
+ <PET 3>:  C6   C4   C5   H3  
+ <PET 3>:  C5   C1   C6   H4  
+ <PET 3>:  C2   C4   C3   H2  
+ <PET 3>:  C3   C1   C2   H1  
+ <PET 3>:  C7   C6   C1   C2  
+ <PET 3>:  C1   O3   C7   O4  
+ <PET 4>:  C4   O1   C8   O2  
+ <PET 4>:  C8   C5   C4   C3  
+ <PET 4>:  C6   C4   C5   H3  
+ <PET 4>:  C5   C1   C6   H4  
+ <PET 4>:  C2   C4   C3   H2  
+ <PET 4>:  C3   C1   C2   H1  
+ <PET 4>:  C7   C6   C1   C2  
+ <PET 4>:  C1   O3   C7   O4  
+ <PET 5>:  C4   O1   C8   O2  
+ <PET 5>:  C8   C5   C4   C3  
+ <PET 5>:  C6   C4   C5   H3  
+ <PET 5>:  C5   C1   C6   H4  
+ <PET 5>:  C2   C4   C3   H2  
+ <PET 5>:  C3   C1   C2   H1  
+ <PET 5>:  C7   C6   C1   C2  
+ <PET 5>:  C1   O3   C7   O4  
+ <PET 7>:  C4   O1   C8   O2  
+ <PET 7>:  C8   C5   C4   C3  
+ <PET 7>:  C6   C4   C5   H3  
+ <PET 7>:  C5   C1   C6   H4  
+ <PET 7>:  C2   C4   C3   H2  
+ <PET 7>:  C3   C1   C2   H1  
+ <PET 7>:  C7   C6   C1   C2  
+ <PET 7>:  C1   O3   C7   O4  
+ <PET 8>:  C4   O1   C8   O2  
+ <PET 8>:  C8   C5   C4   C3  
+ <PET 8>:  C6   C4   C5   H3  
+ <PET 8>:  C5   C1   C6   H4  
+ <PET 8>:  C2   C4   C3   H2  
+ <PET 8>:  C3   C1   C2   H1  
+ <PET 8>:  C7   C6   C1   C2  
+ <PET 8>:  C1   O3   C7   O4  
+ <PET 9>:  C4   O1   C8   O2  
+ <PET 9>:  C8   C5   C4   C3  
+ <PET 9>:  C6   C4   C5   H3  
+ <PET 9>:  C5   C1   C6   H4  
+ <PET 9>:  C2   C4   C3   H2  
+ <PET 9>:  C3   C1   C2   H1  
+ <PET 9>:  C7   C6   C1   C2  
+ <PET 9>:  C1   O3   C7   O4  
+ <PET 10>:  C4   O1   C8   O2  
+ <PET 10>:  C8   C5   C4   C3  
+ <PET 10>:  C6   C4   C5   H3  
+ <PET 10>:  C5   C1   C6   H4  
+ <PET 10>:  C2   C4   C3   H2  
+ <PET 10>:  C3   C1   C2   H1  
+ <PET 10>:  C7   C6   C1   C2  
+ <PET 10>:  C1   O3   C7   O4  
+ <PET 11>:  C4   O1   C8   O2  
+ <PET 11>:  C8   C5   C4   C3  
+ <PET 11>:  C6   C4   C5   H3  
+ <PET 11>:  C5   C1   C6   H4  
+ <PET 11>:  C2   C4   C3   H2  
+ <PET 11>:  C3   C1   C2   H1  
+ <PET 11>:  C7   C6   C1   C2  
+ <PET 11>:  C1   O3   C7   O4  
+ <PET 12>:  C4   O1   C8   O2  
+ <PET 12>:  C8   C5   C4   C3  
+ <PET 12>:  C6   C4   C5   H3  
+ <PET 12>:  C5   C1   C6   H4  
+ <PET 12>:  C2   C4   C3   H2  
+ <PET 12>:  C3   C1   C2   H1  
+ <PET 12>:  C7   C6   C1   C2  
+ <PET 12>:  C1   O3   C7   O4  
+ <PET 13>:  C4   O1   C8   O2  
+ <PET 13>:  C8   C5   C4   C3  
+ <PET 13>:  C6   C4   C5   H3  
+ <PET 13>:  C5   C1   C6   H4  
+ <PET 13>:  C2   C4   C3   H2  
+ <PET 13>:  C3   C1   C2   H1  
+ <PET 13>:  C7   C6   C1   C2  
+ <PET 13>:  C1   O3   C7   O4  
+ <PET 14>:  C4   O1   C8   O2  
+ <PET 14>:  C8   C5   C4   C3  
+ <PET 14>:  C6   C4   C5   H3  
+ <PET 14>:  C5   C1   C6   H4  
+ <PET 14>:  C2   C4   C3   H2  
+ <PET 14>:  C3   C1   C2   H1  
+ <PET 14>:  C7   C6   C1   C2  
+ <PET 14>:  C1   O3   C7   O4  
+ <PET 15>:  C4   O1   C8   O2  
+ <PET 15>:  C8   C5   C4   C3  
+ <PET 15>:  C6   C4   C5   H3  
+ <PET 15>:  C5   C1   C6   H4  
+ <PET 15>:  C2   C4   C3   H2  
+ <PET 15>:  C3   C1   C2   H1  
+ <PET 15>:  C7   C6   C1   C2  
+ <PET 15>:  C1   O3   C7   O4  
+ <PET 16>:  C4   O1   C8   O2  
+ <PET 16>:  C8   C5   C4   C3  
+ <PET 16>:  C6   C4   C5   H3  
+ <PET 16>:  C5   C1   C6   H4  
+ <PET 16>:  C2   C4   C3   H2  
+ <PET 16>:  C3   C1   C2   H1  
+ <PET 16>:  C7   C6   C1   C2  
+ <PET 16>:  C1   O3   C7   O4  
+ <PET 17>:  C4   O1   C8   O2  
+ <PET 17>:  C8   C5   C4   C3  
+ <PET 17>:  C6   C4   C5   H3  
+ <PET 17>:  C5   C1   C6   H4  
+ <PET 17>:  C2   C4   C3   H2  
+ <PET 17>:  C3   C1   C2   H1  
+ <PET 17>:  C7   C6   C1   C2  
+ <PET 17>:  C1   O3   C7   O4  
+ <PET 18>:  C4   O1   C8   O2  
+ <PET 18>:  C8   C5   C4   C3  
+ <PET 18>:  C6   C4   C5   H3  
+ <PET 18>:  C5   C1   C6   H4  
+ <PET 18>:  C2   C4   C3   H2  
+ <PET 18>:  C3   C1   C2   H1  
+ <PET 18>:  C7   C6   C1   C2  
+ <PET 18>:  C1   O3   C7   O4  
+ <PET 19>:  C4   O1   C8   O2  
+ <PET 19>:  C8   C5   C4   C3  
+ <PET 19>:  C6   C4   C5   H3  
+ <PET 19>:  C5   C1   C6   H4  
+ <PET 19>:  C2   C4   C3   H2  
+ <PET 19>:  C3   C1   C2   H1  
+ <PET 19>:  C7   C6   C1   C2  
+ <PET 19>:  C1   O3   C7   O4  
+ <PET 20>:  C4   O1   C8   O2  
+ <PET 20>:  C8   C5   C4   C3  
+ <PET 20>:  C6   C4   C5   H3  
+ <PET 20>:  C5   C1   C6   H4  
+ <PET 20>:  C2   C4   C3   H2  
+ <PET 20>:  C3   C1   C2   H1  
+ <PET 20>:  C7   C6   C1   C2  
+ <PET 20>:  C1   O3   C7   O4  
+ <PET 21>:  C4   O1   C8   O2  
+ <PET 21>:  C8   C5   C4   C3  
+ <PET 21>:  C6   C4   C5   H3  
+ <PET 21>:  C5   C1   C6   H4  
+ <PET 21>:  C2   C4   C3   H2  
+ <PET 21>:  C3   C1   C2   H1  
+ <PET 21>:  C7   C6   C1   C2  
+ <PET 21>:  C1   O3   C7   O4  
+ <PET 22>:  C4   O1   C8   O2  
+ <PET 22>:  C8   C5   C4   C3  
+ <PET 22>:  C6   C4   C5   H3  
+ <PET 22>:  C5   C1   C6   H4  
+ <PET 22>:  C2   C4   C3   H2  
+ <PET 22>:  C3   C1   C2   H1  
+ <PET 22>:  C7   C6   C1   C2  
+ <PET 22>:  C1   O3   C7   O4  
+ <PET 23>:  C4   O1   C8   O2  
+ <PET 23>:  C8   C5   C4   C3  
+ <PET 23>:  C6   C4   C5   H3  
+ <PET 23>:  C5   C1   C6   H4  
+ <PET 23>:  C2   C4   C3   H2  
+ <PET 23>:  C3   C1   C2   H1  
+ <PET 23>:  C7   C6   C1   C2  
+ <PET 23>:  C1   O3   C7   O4  
+ <PET 24>:  C4   O1   C8   O2  
+ <PET 24>:  C8   C5   C4   C3  
+ <PET 24>:  C6   C4   C5   H3  
+ <PET 24>:  C5   C1   C6   H4  
+ <PET 24>:  C2   C4   C3   H2  
+ <PET 24>:  C3   C1   C2   H1  
+ <PET 24>:  C7   C6   C1   C2  
+ <PET 24>:  C1   O3   C7   O4  
+ <PET 26>:  C4   O1   C8   O2  
+ <PET 26>:  C8   C5   C4   C3  
+ <PET 26>:  C6   C4   C5   H3  
+ <PET 26>:  C5   C1   C6   H4  
+ <PET 26>:  C2   C4   C3   H2  
+ <PET 26>:  C3   C1   C2   H1  
+ <PET 26>:  C7   C6   C1   C2  
+ <PET 26>:  C1   O3   C7   O4  
+ <PET 27>:  C4   O1   C8   O2  
+ <PET 27>:  C8   C5   C4   C3  
+ <PET 27>:  C6   C4   C5   H3  
+ <PET 27>:  C5   C1   C6   H4  
+ <PET 27>:  C2   C4   C3   H2  
+ <PET 27>:  C3   C1   C2   H1  
+ <PET 27>:  C7   C6   C1   C2  
+ <PET 27>:  C1   O3   C7   O4  
+ <PET 30>:  C4   O1   C8   O2  
+ <PET 30>:  C8   C5   C4   C3  
+ <PET 30>:  C6   C4   C5   H3  
+ <PET 30>:  C5   C1   C6   H4  
+ <PET 30>:  C2   C4   C3   H2  
+ <PET 30>:  C3   C1   C2   H1  
+ <PET 30>:  C7   C6   C1   C2  
+ <PET 30>:  C1   O3   C7   O4  
+ total 150 improper torsions applied
+ 200 improper torsions in old prep form
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+ (no restraints)
+> quit
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 0; Notes = 0.
+log started: Mon Dec 15 12:54:32 2025
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "op"  "O" "sp3" }
+>> 	{ "oq"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "c5"  "C" "sp3" }
+>> 	{ "c6"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cs"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "cz"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "n5"  "N" "sp3" }
+>> 	{ "n6"  "N" "sp3" }
+>> 	{ "n7"  "N" "sp3" }
+>> 	{ "n8"  "N" "sp3" }
+>> 	{ "n9"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "ni"  "N" "sp2" }
+>> 	{ "nj"  "N" "sp2" }
+>> 	{ "nk"  "N" "sp3" }
+>> 	{ "nl"  "N" "sp3" }
+>> 	{ "nm"  "N" "sp2" }
+>> 	{ "nn"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "np"  "N" "sp3" }
+>> 	{ "nq"  "N" "sp3" }
+>> 	{ "ns"  "N" "sp2" }
+>> 	{ "nt"  "N" "sp2" }
+>> 	{ "nu"  "N" "sp2" }
+>> 	{ "nv"  "N" "sp2" }
+>> 	{ "nx"  "N" "sp3" }
+>> 	{ "ny"  "N" "sp3" }
+>> 	{ "nz"  "N" "sp3" }
+>> 	{ "n+"  "N" "sp3" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "sp"   "S" "sp3" }
+>> 	{ "sq"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pc"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "pe"   "P" "sp3" }
+>> 	{ "pf"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff2.dat
+Loading parameters: /Users/harish/miniconda3/envs/polymer_md/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.2.20, March 2021)
+> 
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/HPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/HPT.prepi
+Loaded UNIT: HPT
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/PET.prepi
+Loaded UNIT: PET
+> loadamberprep /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+Loading Prep file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/monomers/PET/TPT.prepi
+Loaded UNIT: TPT
+> 
+> mol = sequence {PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET PET}
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+Sequence: PET
+> 
+> savepdb mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PET25_homo/polymer_25mer.pdb
+Writing pdb file: /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PET25_homo/polymer_25mer.pdb
+> saveamberparm mol /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PET25_homo/polymer_25mer.prmtop                  /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day3-gen-polymer-solved/polymers/PET25_homo/polymer_25mer.inpcrd
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+ ** Warning: No sp2 improper torsion term for  ca-c-ca-ca
+        atoms are: C2 C7 C1 C6
+ ** Warning: No sp2 improper torsion term for  c-ca-ca-ca
+        atoms are: C8 C5 C4 C3
+old PREP-specified impropers:
+ <PET 1>:  C4   O1   C8   O2  
+ <PET 1>:  C8   C5   C4   C3  
+ <PET 1>:  C6   C4   C5   H3  
+ <PET 1>:  C5   C1   C6   H4  
+ <PET 1>:  C2   C4   C3   H2  
+ <PET 1>:  C3   C1   C2   H1  
+ <PET 1>:  C7   C6   C1   C2  
+ <PET 1>:  C1   O3   C7   O4  
+ <PET 2>:  C4   O1   C8   O2  
+ <PET 2>:  C8   C5   C4   C3  
+ <PET 2>:  C6   C4   C5   H3  
+ <PET 2>:  C5   C1   C6   H4  
+ <PET 2>:  C2   C4   C3   H2  
+ <PET 2>:  C3   C1   C2   H1  
+ <PET 2>:  C7   C6   C1   C2  
+ <PET 2>:  C1   O3   C7   O4  
+ <PET 3>:  C4   O1   C8   O2  
+ <PET 3>:  C8   C5   C4   C3  
+ <PET 3>:  C6   C4   C5   H3  
+ <PET 3>:  C5   C1   C6   H4  
+ <PET 3>:  C2   C4   C3   H2  
+ <PET 3>:  C3   C1   C2   H1  
+ <PET 3>:  C7   C6   C1   C2  
+ <PET 3>:  C1   O3   C7   O4  
+ <PET 4>:  C4   O1   C8   O2  
+ <PET 4>:  C8   C5   C4   C3  
+ <PET 4>:  C6   C4   C5   H3  
+ <PET 4>:  C5   C1   C6   H4  
+ <PET 4>:  C2   C4   C3   H2  
+ <PET 4>:  C3   C1   C2   H1  
+ <PET 4>:  C7   C6   C1   C2  
+ <PET 4>:  C1   O3   C7   O4  
+ <PET 5>:  C4   O1   C8   O2  
+ <PET 5>:  C8   C5   C4   C3  
+ <PET 5>:  C6   C4   C5   H3  
+ <PET 5>:  C5   C1   C6   H4  
+ <PET 5>:  C2   C4   C3   H2  
+ <PET 5>:  C3   C1   C2   H1  
+ <PET 5>:  C7   C6   C1   C2  
+ <PET 5>:  C1   O3   C7   O4  
+ <PET 6>:  C4   O1   C8   O2  
+ <PET 6>:  C8   C5   C4   C3  
+ <PET 6>:  C6   C4   C5   H3  
+ <PET 6>:  C5   C1   C6   H4  
+ <PET 6>:  C2   C4   C3   H2  
+ <PET 6>:  C3   C1   C2   H1  
+ <PET 6>:  C7   C6   C1   C2  
+ <PET 6>:  C1   O3   C7   O4  
+ <PET 7>:  C4   O1   C8   O2  
+ <PET 7>:  C8   C5   C4   C3  
+ <PET 7>:  C6   C4   C5   H3  
+ <PET 7>:  C5   C1   C6   H4  
+ <PET 7>:  C2   C4   C3   H2  
+ <PET 7>:  C3   C1   C2   H1  
+ <PET 7>:  C7   C6   C1   C2  
+ <PET 7>:  C1   O3   C7   O4  
+ <PET 8>:  C4   O1   C8   O2  
+ <PET 8>:  C8   C5   C4   C3  
+ <PET 8>:  C6   C4   C5   H3  
+ <PET 8>:  C5   C1   C6   H4  
+ <PET 8>:  C2   C4   C3   H2  
+ <PET 8>:  C3   C1   C2   H1  
+ <PET 8>:  C7   C6   C1   C2  
+ <PET 8>:  C1   O3   C7   O4  
+ <PET 9>:  C4   O1   C8   O2  
+ <PET 9>:  C8   C5   C4   C3  
+ <PET 9>:  C6   C4   C5   H3  
+ <PET 9>:  C5   C1   C6   H4  
+ <PET 9>:  C2   C4   C3   H2  
+ <PET 9>:  C3   C1   C2   H1  
+ <PET 9>:  C7   C6   C1   C2  
+ <PET 9>:  C1   O3   C7   O4  
+ <PET 10>:  C4   O1   C8   O2  
+ <PET 10>:  C8   C5   C4   C3  
+ <PET 10>:  C6   C4   C5   H3  
+ <PET 10>:  C5   C1   C6   H4  
+ <PET 10>:  C2   C4   C3   H2  
+ <PET 10>:  C3   C1   C2   H1  
+ <PET 10>:  C7   C6   C1   C2  
+ <PET 10>:  C1   O3   C7   O4  
+ <PET 11>:  C4   O1   C8   O2  
+ <PET 11>:  C8   C5   C4   C3  
+ <PET 11>:  C6   C4   C5   H3  
+ <PET 11>:  C5   C1   C6   H4  
+ <PET 11>:  C2   C4   C3   H2  
+ <PET 11>:  C3   C1   C2   H1  
+ <PET 11>:  C7   C6   C1   C2  
+ <PET 11>:  C1   O3   C7   O4  
+ <PET 12>:  C4   O1   C8   O2  
+ <PET 12>:  C8   C5   C4   C3  
+ <PET 12>:  C6   C4   C5   H3  
+ <PET 12>:  C5   C1   C6   H4  
+ <PET 12>:  C2   C4   C3   H2  
+ <PET 12>:  C3   C1   C2   H1  
+ <PET 12>:  C7   C6   C1   C2  
+ <PET 12>:  C1   O3   C7   O4  
+ <PET 13>:  C4   O1   C8   O2  
+ <PET 13>:  C8   C5   C4   C3  
+ <PET 13>:  C6   C4   C5   H3  
+ <PET 13>:  C5   C1   C6   H4  
+ <PET 13>:  C2   C4   C3   H2  
+ <PET 13>:  C3   C1   C2   H1  
+ <PET 13>:  C7   C6   C1   C2  
+ <PET 13>:  C1   O3   C7   O4  
+ <PET 14>:  C4   O1   C8   O2  
+ <PET 14>:  C8   C5   C4   C3  
+ <PET 14>:  C6   C4   C5   H3  
+ <PET 14>:  C5   C1   C6   H4  
+ <PET 14>:  C2   C4   C3   H2  
+ <PET 14>:  C3   C1   C2   H1  
+ <PET 14>:  C7   C6   C1   C2  
+ <PET 14>:  C1   O3   C7   O4  
+ <PET 15>:  C4   O1   C8   O2  
+ <PET 15>:  C8   C5   C4   C3  
+ <PET 15>:  C6   C4   C5   H3  
+ <PET 15>:  C5   C1   C6   H4  
+ <PET 15>:  C2   C4   C3   H2  
+ <PET 15>:  C3   C1   C2   H1  
+ <PET 15>:  C7   C6   C1   C2  
+ <PET 15>:  C1   O3   C7   O4  
+ <PET 16>:  C4   O1   C8   O2  
+ <PET 16>:  C8   C5   C4   C3  
+ <PET 16>:  C6   C4   C5   H3  
+ <PET 16>:  C5   C1   C6   H4  
+ <PET 16>:  C2   C4   C3   H2  
+ <PET 16>:  C3   C1   C2   H1  
+ <PET 16>:  C7   C6   C1   C2  
+ <PET 16>:  C1   O3   C7   O4  
+ <PET 17>:  C4   O1   C8   O2  
+ <PET 17>:  C8   C5   C4   C3  
+ <PET 17>:  C6   C4   C5   H3  
+ <PET 17>:  C5   C1   C6   H4  
+ <PET 17>:  C2   C4   C3   H2  
+ <PET 17>:  C3   C1   C2   H1  
+ <PET 17>:  C7   C6   C1   C2  
+ <PET 17>:  C1   O3   C7   O4  
+ <PET 18>:  C4   O1   C8   O2  
+ <PET 18>:  C8   C5   C4   C3  
+ <PET 18>:  C6   C4   C5   H3  
+ <PET 18>:  C5   C1   C6   H4  
+ <PET 18>:  C2   C4   C3   H2  
+ <PET 18>:  C3   C1   C2   H1  
+ <PET 18>:  C7   C6   C1   C2  
+ <PET 18>:  C1   O3   C7   O4  
+ <PET 19>:  C4   O1   C8   O2  
+ <PET 19>:  C8   C5   C4   C3  
+ <PET 19>:  C6   C4   C5   H3  
+ <PET 19>:  C5   C1   C6   H4  
+ <PET 19>:  C2   C4   C3   H2  
+ <PET 19>:  C3   C1   C2   H1  
+ <PET 19>:  C7   C6   C1   C2  
+ <PET 19>:  C1   O3   C7   O4  
+ <PET 20>:  C4   O1   C8   O2  
+ <PET 20>:  C8   C5   C4   C3  
+ <PET 20>:  C6   C4   C5   H3  
+ <PET 20>:  C5   C1   C6   H4  
+ <PET 20>:  C2   C4   C3   H2  
+ <PET 20>:  C3   C1   C2   H1  
+ <PET 20>:  C7   C6   C1   C2  
+ <PET 20>:  C1   O3   C7   O4  
+ <PET 21>:  C4   O1   C8   O2  
+ <PET 21>:  C8   C5   C4   C3  
+ <PET 21>:  C6   C4   C5   H3  
+ <PET 21>:  C5   C1   C6   H4  
+ <PET 21>:  C2   C4   C3   H2  
+ <PET 21>:  C3   C1   C2   H1  
+ <PET 21>:  C7   C6   C1   C2  
+ <PET 21>:  C1   O3   C7   O4  
+ <PET 22>:  C4   O1   C8   O2  
+ <PET 22>:  C8   C5   C4   C3  
+ <PET 22>:  C6   C4   C5   H3  
+ <PET 22>:  C5   C1   C6   H4  
+ <PET 22>:  C2   C4   C3   H2  
+ <PET 22>:  C3   C1   C2   H1  
+ <PET 22>:  C7   C6   C1   C2  
+ <PET 22>:  C1   O3   C7   O4  
+ <PET 23>:  C4   O1   C8   O2  
+ <PET 23>:  C8   C5   C4   C3  
+ <PET 23>:  C6   C4   C5   H3  
+ <PET 23>:  C5   C1   C6   H4  
+ <PET 23>:  C2   C4   C3   H2  
+ <PET 23>:  C3   C1   C2   H1  
+ <PET 23>:  C7   C6   C1   C2  
+ <PET 23>:  C1   O3   C7   O4  
+ <PET 24>:  C4   O1   C8   O2  
+ <PET 24>:  C8   C5   C4   C3  
+ <PET 24>:  C6   C4   C5   H3  
+ <PET 24>:  C5   C1   C6   H4  
+ <PET 24>:  C2   C4   C3   H2  
+ <PET 24>:  C3   C1   C2   H1  
+ <PET 24>:  C7   C6   C1   C2  
+ <PET 24>:  C1   O3   C7   O4  
+ <PET 25>:  C4   O1   C8   O2  
+ <PET 25>:  C8   C5   C4   C3  
+ <PET 25>:  C6   C4   C5   H3  
+ <PET 25>:  C5   C1   C6   H4  
+ <PET 25>:  C2   C4   C3   H2  
+ <PET 25>:  C3   C1   C2   H1  
+ <PET 25>:  C7   C6   C1   C2  
+ <PET 25>:  C1   O3   C7   O4  
+ total 150 improper torsions applied
+ 200 improper torsions in old prep form
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+ (no restraints)
+> quit
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 0; Notes = 0.
