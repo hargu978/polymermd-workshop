@@ -1,0 +1,48 @@
+
+title                   =  Simulated Annealing NPT
+
+; Run parameters
+integrator              = md
+nsteps                  = 1000000     ; 2 ns (0.002 ps timestep)
+dt                      = 0.002
+
+; Output control
+nstxout-compressed      = 5000
+nstenergy               = 5000
+nstlog                  = 5000
+
+; Bonded parameters
+constraints             = h-bonds
+constraint_algorithm    = lincs
+
+; Nonbonded settings
+cutoff-scheme           = Verlet
+rlist                   = 1.2
+rvdw                    = 1.2
+
+; Electrostatics settings
+coulombtype             = PME
+rcoulomb                = 1.2
+
+; Temperature coupling
+tcoupl                  = V-rescale
+tc-grps                 = System
+tau_t                   = 0.1
+ref_t                   = 400
+annealing               = single
+annealing_npoints       = 9
+annealing_time          = 0 250 500 750 1000 1250 1500 1750 2000
+annealing_temp          = 400 380 340 320 300 280 260 250 240
+
+; Pressure coupling
+pcoupl                  = Parrinello-Rahman
+pcoupltype              = isotropic
+tau_p                   = 2.0
+ref_p                   = 1.0
+compressibility         = 4.5e-5
+
+; Periodic boundary conditions
+pbc                     = xyz
+
+; Velocity generation
+gen_vel                 = no

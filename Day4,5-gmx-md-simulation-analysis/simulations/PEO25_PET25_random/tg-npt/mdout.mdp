@@ -1,15 +1,15 @@
 ;
 ;	File 'mdout.mdp' was generated
-;	By user: harish (501)
+;	By user: root (501)
 ;	On host: Mac.lan
-;	At date: Tue Dec 16 13:51:38 2025
+;	At date: Tue Dec 16 20:59:29 2025
 ;
 ;	Created by:
 ;	               :-) GROMACS - gmx grompp, 2025.2-conda_forge (-:
 ;	
 ;	Executable:   /Users/harish/miniconda3/envs/polymer_md/bin.ARM_NEON_ASIMD/gmx
 ;	Data prefix:  /Users/harish/miniconda3/envs/polymer_md
-;	Working dir:  /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day4-gmx-md-formats/simulations/PEO25_PET25_block/tg-npt
+;	Working dir:  /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day4,5-gmx-md-simulation-analysis/simulations/PEO25_PET25_random/tg-npt
 ;	Command line:
 ;	  gmx grompp -f annealing.mdp -c ../prod-npt/prod-npt.gro -p ../topol.top -o annealing.tpr -maxwarn 2
 
@@ -67,11 +67,11 @@ nstxout                  = 0
 nstvout                  = 0
 nstfout                  = 0
 ; Output frequency for energies to log file and energy file
-nstlog                   = 1000
+nstlog                   = 5000
 nstcalcenergy            = 100
-nstenergy                = 1000
+nstenergy                = 5000
 ; Output frequency and precision for .xtc file
-nstxout-compressed       = 1000
+nstxout-compressed       = 5000
 compressed-x-precision   = 1000
 ; This selects the subset of atoms for the compressed
 ; trajectory file. You can select multiple groups. By
@@ -175,7 +175,7 @@ annealing_temp           = 400 380 340 320 300 280 260 250 240
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen_vel                  = no
 gen-temp                 = 300
-gen-seed                 = 2113842665
+gen-seed                 = -136315025
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds

@@ -1,15 +1,15 @@
-# This file was created Tue Dec 16 11:31:08 2025
+# This file was created Tue Dec 16 21:06:15 2025
 # Created by:
-#                 :-) GROMACS - gmx rdf, 2025.2-conda_forge (-:
+#                   :-) GROMACS - gmx rdf, 2025.4-Homebrew (-:
 # 
-# Executable:   /Users/harish/miniconda3/envs/polymer_md/bin.ARM_NEON_ASIMD/gmx
-# Data prefix:  /Users/harish/miniconda3/envs/polymer_md
-# Working dir:  /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day4-gmx-md-formats/simulations/PEO25_PET25_random/analysis
+# Executable:   /opt/homebrew/bin/../Cellar/gromacs/2025.4/bin/gmx
+# Data prefix:  /opt/homebrew/bin/../Cellar/gromacs/2025.4
+# Working dir:  /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day4,5-gmx-md-simulation-analysis/simulations/PEO25_PET25_random/analysis
 # Command line:
-#   gmx rdf -s ../prod-npt/prod-npt.tpr -f ../prod-npt/prod-npt.xtc -o rdf_na_cl.xvg -tu ns
+#   gmx rdf -s ../prod-npt/prod-npt.tpr -f ../prod-npt/prod-npt.xtc -o rdf_na_cl.xvg -tu ns -cn cn_na_cl.xvg
 # gmx rdf is part of G R O M A C S:
 #
-# Guyana Rwanda Oman Macau Angola Cameroon Senegal
+# Green Red Orange Magenta Azure Cyan Skyblue
 #
 @    title "Radial distribution"
 @    xaxis  label "r (nm)"

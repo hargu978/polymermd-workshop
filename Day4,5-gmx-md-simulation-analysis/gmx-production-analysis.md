@@ -1,12 +1,13 @@
+
 # Day 5: Polymer+Water+Ions Production Simulation with GROMACS and Analysis
 
 This tutorial demonstrates how to perform a **production molecular dynamics (MD) simulation** of a solvated polymer system using **GROMACS**, and how to analyze the results. The workflow includes:
 
-1. **Production MD Simulation**: 10 ns simulation at constant pressure (1 bar) and temperature (300 K).
+1. **Production MD Simulation**: 5–10 ns simulation at constant pressure (1 bar) and temperature (300 K).
 2. **Analysis Stage**: Calculation of key properties:
    - Root Mean Squared Displacement (RMSD) of the polymer chain
    - Radius of Gyration
-   - Radial Distribution Function (RDF) for Na-Cl and Na-Os
+   - Radial Distribution Function (RDF) for Na-Cl, water-water, and polymer-water (Na-Os)
    - Glass Transition Temperature from simulated annealing
 
 Visualization is performed using **nglview**, **MDAnalysis**, and **matplotlib**.
@@ -48,13 +49,13 @@ Set up the environment for the tutorial. Install required Python packages, creat
 
 **Key Parameters:**
 - Integrator: Leap-frog MD
-- Simulation Time: 10 ns
+- Simulation Time: 5–10 ns
 - Temperature: 300 K
 
 **Example MDP settings:**
 ```ini
 integrator              = md
-nsteps                  = 5000000       ; 10 ns
+nsteps                  = 2500000       ; 5 ns (or 5000000 for 10 ns)
 dt                      = 0.002
 tcoupl                  = V-rescale
 tc-grps                 = System
@@ -71,15 +72,34 @@ gen_vel                 = no
 
 **Typical GROMACS commands:**
 ```bash
-gmx grompp -f preeq.mdp -c ../em/em.gro -p ../topol.top -o preeq.tpr -maxwarn 2
-gmx mdrun -s preeq.tpr -deffnm preeq -v
+gmx grompp -f prod-npt.mdp -c ../eq-npt/eq-npt.gro -p ../topol.top -o prod-npt.tpr -maxwarn 2
+gmx mdrun -s prod-npt.tpr -deffnm prod-npt -v
 ```
 
 ---
 
 ## Example SLURM Script for Remote Server
 
-Provide a SLURM script here if running on a cluster (not shown in this summary).
+Below is an example SLURM script to run both `gmx grompp` and `gmx mdrun` for a 5 ns production simulation on a SLURM-based cluster:
+
+```bash
+#!/bin/bash
+#SBATCH --job-name=gmx_prod
+#SBATCH --output=gmx_prod.out
+#SBATCH --error=gmx_prod.err
+#SBATCH --ntasks=8
+#SBATCH --time=06:00:00
+#SBATCH --partition=compute
+#SBATCH --mem=8G
+
+module load gromacs
+
+# Step 1: Generate the .tpr file
+gmx grompp -f prod.mdp -c ../em/em.gro -p ../topol.top -o prod.tpr -maxwarn 2
+
+# Step 2: Run production MD
+gmx mdrun -s prod.tpr -deffnm prod -nt 8 -v
+```
 
 ---
 
@@ -100,13 +120,11 @@ Provide a SLURM script here if running on a cluster (not shown in this summary).
 **Purpose:** Calculate the RMSD of the polymer chain to analyze its structural stability over time.
 
 **Procedure:**
-1. Use `gmx rms` to calculate RMSD.
-2. Plot RMSD vs time.
-
-**Example command:**
-```bash
-gmx rms -s prod.tpr -f prod.xtc -o rmsd.xvg -tu ns
-```
+1. Use `gmx rms` to calculate RMSD:
+   ```bash
+   gmx rms -s ../prod-npt/prod-npt.tpr -f ../prod-npt/prod-npt.xtc -o rmsd.xvg -tu ns -b 0
+   ```
+2. Plot RMSD vs time using Python (see notebook for code).
 
 ---
 
@@ -115,52 +133,47 @@ gmx rms -s prod.tpr -f prod.xtc -o rmsd.xvg -tu ns
 **Purpose:** Calculate the radius of gyration to analyze polymer compactness.
 
 **Procedure:**
-1. Use `gmx gyrate` to calculate radius of gyration.
-2. Plot radius of gyration vs time.
-
-**Example command:**
-```bash
-gmx gyrate -s prod.tpr -f prod.xtc -o gyrate.xvg
-```
+1. Use `gmx gyrate` to calculate radius of gyration:
+   ```bash
+   gmx gyrate -s ../prod-npt/prod-npt.tpr -f ../prod-npt/prod-npt.xtc -o gyrate.xvg
+   ```
+2. Plot radius of gyration vs time using Python.
 
 ---
 
 ### 3. Radial Distribution Function (RDF)
 
-**Purpose:** Calculate RDF for Na-Cl and Na-Os.
+**Purpose:** Calculate RDF for Na-Cl, water-water, and polymer-water (Na-Os).
 
 **Procedure:**
-1. Use `gmx rdf` to calculate RDF.
-2. Plot RDF vs distance.
-
-**Example commands:**
-```bash
-gmx rdf -f prod.xtc -s prod.tpr -n index.ndx -o rdf_na_cl.xvg -tu nm
-gmx rdf -f prod.xtc -s prod.tpr -n index.ndx -o rdf_na_os.xvg -tu nm
-```
+1. Use `gmx rdf` to calculate RDFs:
+   ```bash
+   gmx rdf -s ../prod-npt/prod-npt.tpr -f ../prod-npt/prod-npt.xtc -o rdf_na_cl.xvg -tu ns
+   gmx rdf -s ../prod-npt/prod-npt.tpr -f ../prod-npt/prod-npt.xtc -o rdf_na_os.xvg -tu ns
+   gmx rdf -s ../prod-npt/prod-npt.tpr -f ../prod-npt/prod-npt.xtc -o rdf_water_water.xvg -tu ns
+   ```
+2. Plot all RDFs side by side using Python (see notebook for code).
 
 ---
 
-### 4. Glass Transition Temperature (from Annealing Simulations)
+### 4. Glass Transition Temperature (from Simulated Annealing)
 
 **Purpose:** Analyze the glass transition temperature from simulated annealing.
 
 **Procedure:**
-1. Extract temperature and density using `gmx energy`.
-2. Plot density vs temperature.
-
-**Example command:**
-```bash
-gmx energy -f annealing.edr -o temp_density.xvg
-```
+1. Prepare a simulated annealing MDP file and run the simulation in a new directory (e.g., `tg-npt`).
+2. Extract temperature and density using `gmx energy`:
+   ```bash
+   gmx energy -f annealing.edr -o temp_density.xvg
+   ```
+3. Fit and plot density vs temperature using Python to estimate $T_g$ (see notebook for code).
 
 ---
 
 ## Visualization
 
-Visualize the polymer structure or trajectory using **nglview** and **MDAnalysis**.
+Visualize the polymer structure or trajectory using **nglview** and **MDAnalysis** in Python:
 
-**Example Python usage:**
 ```python
 visualize_trajectory("polymer_solv_ions.gro")
 ```

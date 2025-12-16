@@ -1,17 +1,17 @@
 ;
 ;	File 'mdout.mdp' was generated
-;	By user: root (501)
+;	By user: harish (501)
 ;	On host: Mac.lan
-;	At date: Tue Dec 16 00:27:32 2025
+;	At date: Tue Dec 16 13:25:07 2025
 ;
 ;	Created by:
 ;	               :-) GROMACS - gmx grompp, 2025.2-conda_forge (-:
 ;	
 ;	Executable:   /Users/harish/miniconda3/envs/polymer_md/bin.ARM_NEON_ASIMD/gmx
 ;	Data prefix:  /Users/harish/miniconda3/envs/polymer_md
-;	Working dir:  /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day4-gmx-md-formats/simulations/PEO25_PET25_block/eq-npt
+;	Working dir:  /Users/harish/Documents/Work_folder/MetaChem-workshops/polymermd-workshop/Day4,5-gmx-md-simulation-analysis/simulations/PEO25_PET25_block/eq-npt
 ;	Command line:
-;	  gmx grompp -f eq-npt.mdp -c eq-npt.gro -p ../topol.top -o eq-npt.tpr -maxwarn 2
+;	  gmx grompp -f eq-npt.mdp -c ../eq-nvt/eq-nvt.gro -p ../topol.top -o eq-npt.tpr -maxwarn 2
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
@@ -175,7 +175,7 @@ annealing_temp           = 400 400 600 300
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen_vel                  = no
 gen-temp                 = 300
-gen-seed                 = -1082395905
+gen-seed                 = 2147352063
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds
