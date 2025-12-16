@@ -4,7 +4,7 @@ This workshop is organized in collaboration with [MetaChem Academy](https://meta
 
 **Recording Playlist:** [YouTube Workshop Recordings](https://www.youtube.com/playlist?list=PLF5klvjYxgkwIBEl7uZSWMMA_8qbP-ln2)
 
-> All session recordings will appear at this playlist after the workshop is finished. The videos are non-downloadable and will remain available for 1 year.
+#> All session recordings will appear at this playlist after the workshop is finished. The videos are non-downloadable and will remain available for 1 year.
 
 **Resources Folder:** [Google Drive Resources](https://drive.google.com/drive/folders/1jxVie8VHSBS0qhesHf3twS_QdnXzHvYk?usp=sharing)
 
@@ -35,13 +35,22 @@ This repository contains Jupyter notebooks and scripts for a hands-on workshop o
 > **Note:** Steps 1 and 2 only need to be run once per machine or when you want to update/reset the environment.
 
 ### Every New Session (Run Every Time You Start Work)
-3. **Activate the Environment:**
+
+3. **Open a Terminal and Navigate to the Workshop Folder:**
+  - On **Windows**, open your Ubuntu (WSL) terminal.
+  - On **Linux/MacOS**, open your regular terminal.
+  - Navigate to the workshop folder (replace `PATH_TO` with your actual path):
+    ```bash
+    cd PATH_TO/polymermd-workshop
+    ```
+
+4. **Activate the Environment:**
   ```bash
   conda activate polymer_md
   source $CONDA_PREFIX/amber.sh
   ```
 
-4. **Start Jupyter Lab:**
+5. **Start Jupyter Lab:**
   ```bash
   jupyter lab --ip 0.0.0.0 --no-browser
   ```
